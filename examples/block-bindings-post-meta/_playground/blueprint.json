@@ -9,7 +9,7 @@
 				"resource": "git:directory",
 				"url": "https://github.com/Automattic/wpvip-learn-enterprise-block-editor",
 				"ref": "HEAD",
-				"path": "modules/module-4-advanced-block-development/lesson-4-1-bindings/block-bindings-post-meta"
+				"path": "examples/block-bindings-post-meta"
 			},
 			"options": {
 				"activate": true
@@ -22,7 +22,7 @@
 			"step": "importWxr",
 			"file": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/modules/module-4-advanced-block-development/lesson-4-1-bindings/block-bindings-post-meta/_playground/export.xml"
+				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/block-bindings-post-meta/_playground/export.xml"
 			}
 		}
 	]
