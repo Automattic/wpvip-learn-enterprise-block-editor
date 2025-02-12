@@ -5,16 +5,28 @@
 	"author": "WordPress VIP Learn",
 	"license": "GPL-2.0-or-later",
 	"scripts": {
-		"setup": "npm install && composer install && npx husky init && echo \"npm run lint\" > .husky/pre-commit",
+		"setup": "npm install && composer install && npx husky init && echo \"npx lint-staged\" > .husky/pre-commit",
 		"format": "wp-scripts format",
 		"lint": "composer run lint && npm run lint:js && npm run lint:css",
 		"lint:css": "wp-scripts lint-style --allow-empty-input",
 		"lint:js": "wp-scripts lint-js --no-error-on-unmatched-pattern",
 		"prepare": "husky"
 	},
+	"lint-staged": {
+		"*.js": [
+			"wp-scripts lint-js"
+		],
+		"*.php": [
+			"composer run lint"
+		],
+		"*.scss": [
+			"wp-scripts lint-style"
+		]
+	},
 	"prettier": "@wordpress/prettier-config",
 	"devDependencies": {
 		"@wordpress/scripts": "*",
-		"husky": "^9.1.7"
+		"husky": "^9.1.7",
+		"lint-staged": "^13.2.0"
 	}
 }
