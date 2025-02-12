@@ -8,13 +8,13 @@
 		"phpcompatibility/phpcompatibility-wp": "*"
 	},
 	"scripts": {
-		"lint": "./vendor/bin/phpcs --standard=phpcs.xml"
+		"lint": "./vendor/bin/phpcs --standard=phpcs.xml --ignore=*.asset.php"
 	},
 	"config": {
-        "allow-plugins": {
-            "squizlabs/php_codesniffer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "wp-coding-standards/wpcs": true
-        }
-    }
+		"allow-plugins": {
+			"squizlabs/php_codesniffer": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"wp-coding-standards/wpcs": true
+		}
+	}
 }

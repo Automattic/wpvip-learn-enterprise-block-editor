@@ -1,0 +1,29 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/wp-admin/post.php?post=10&action=edit",
+	"login": true,
+	"steps": [
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/Automattic/wpvip-learn-enterprise-block-editor",
+				"ref": "HEAD",
+				"path": "modules/module-4-advanced-block-development/lesson-4-1-bindings/block-bindings-custom-source"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "resetData"
+		},
+		{
+			"step": "importWxr",
+			"file": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/modules/module-4-advanced-block-development/lesson-4-1-bindings/block-bindings-custom-source/_playground/export.xml"
+			}
+		}
+	]
+}
