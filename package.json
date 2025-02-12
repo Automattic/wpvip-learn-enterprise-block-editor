@@ -1,0 +1,20 @@
+{
+	"name": "wpvip-learn-enteprise-block-editor",
+	"version": "1.0.0",
+	"description": "A repos with examples for the Learn VIP Course: Enterprise Block Editor (Gutenberg)",
+	"author": "WordPress VIP Learn",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"setup": "npm install && composer install && npx husky init && echo \"npm run lint\" > .husky/pre-commit",
+		"format": "wp-scripts format",
+		"lint": "composer run lint && npm run lint:js && npm run lint:css",
+		"lint:css": "wp-scripts lint-style --allow-empty-input",
+		"lint:js": "wp-scripts lint-js --no-error-on-unmatched-pattern",
+		"prepare": "husky"
+	},
+	"prettier": "@wordpress/prettier-config",
+	"devDependencies": {
+		"@wordpress/scripts": "*",
+		"husky": "^9.1.7"
+	}
+}
