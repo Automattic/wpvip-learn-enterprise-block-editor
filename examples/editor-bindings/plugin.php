@@ -64,11 +64,11 @@ function devblog_editor_assets() {
 	$url = untrailingslashit( plugin_dir_url( __FILE__ ) );
 
 	if ( file_exists( "{$dir}/build/js/editor.asset.php" ) ) {
-		$asset = include "{$dir}/public/js/editor.asset.php";
+		$asset = include "{$dir}/build/js/editor.asset.php";
 
 		wp_enqueue_script(
 			'devblog-editor-bindings',
-			"{$url}/public/js/editor.js",
+			"{$url}/build/js/editor.js",
 			$asset['dependencies'],
 			$asset['version'],
 			true
