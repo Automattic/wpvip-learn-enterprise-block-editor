@@ -54,7 +54,7 @@
 			<guid isPermaLink="false">http://localhost:8881/?p=1</guid>
 			<description></description>
 			<content:encoded><![CDATA[<!-- wp:paragraph -->
-<p>The following block is the <strong><em>Inner Blocks dcd824</em></strong> block (play with it by modifying its content and insert new blocks inside of it). You can also insert a new <em>Inner Blocks dcd824</em> blocks to see how some default blocks are automatially inserted.</p>
+<p>The following block is the <strong><em>Block with Inner Blocks</em></strong> block (play with it by modifying its content and insert new blocks inside of it). You can also insert a new <em>Block with Inner Blocks</em> blocks to see how some default blocks are automatially inserted.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:automattic/wpvip-learn-enterprise-block-editor-inner-blocks -->
