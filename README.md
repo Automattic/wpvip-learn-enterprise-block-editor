@@ -26,4 +26,4 @@ By running `npm run setup` from the root of the project you'll:
     -   Lesson 4.2: Inner Blocks
         -   [inner-blocks](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/inner-blocks) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/inner-blocks/_playground/blueprint.json))
     -   Lesson 4.3: Context
-        -   [context](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/context) ([live demo](https:// playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/context/_playground/blueprint.json))
+        -   [context](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/context) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/context/_playground/blueprint.json))
