@@ -1,5 +1,5 @@
 {
-	"name": "devblog-editor-bindings",
+	"name": "editor-bindings",
 	"scripts": {
 		"start": "wp-scripts start --webpack-src-dir=resources",
 		"build": "wp-scripts build --webpack-src-dir=resources"

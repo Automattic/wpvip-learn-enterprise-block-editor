@@ -119,7 +119,7 @@ module.exports = window["wp"]["blocks"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wpvip-learn-enterprise-block-editor/inner-blocks","version":"0.1.0","title":"Block with Inner Blocks ","allowedBlocks":["core/paragraph","core/image","core/heading","core/list","core/quote"],"category":"widgets","example":{},"textdomain":"block-development-examples","editorScript":"file:./index.js","editorStyle":"file:./index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"automattic/wpvip-learn-enterprise-block-editor-inner-blocks","version":"0.1.0","title":"Block with Inner Blocks ","allowedBlocks":["core/paragraph","core/image","core/heading","core/list","core/quote"],"category":"widgets","example":{},"textdomain":"wpvip-learn-enterprise-block-editor","editorScript":"file:./index.js","editorStyle":"file:./index.css"}');
 
 /***/ })
 
