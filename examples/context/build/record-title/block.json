@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "my-plugin/record-title",
+  "version": "0.1.0",
+  "icon": "smiley",
+  "description": "Example of Block Context Consumer",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "title": "Record Title - Block Context Consumer",
+  "category": "widgets",
+  "usesContext": [
+    "my-plugin/recordId"
+  ],
+  "textdomain": "wpvip-learn-enterprise-block-editor",
+  "editorScript": "file:./index.js"
+}

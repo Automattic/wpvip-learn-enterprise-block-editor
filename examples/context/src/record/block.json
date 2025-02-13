@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "my-plugin/record",
+	"version": "0.1.0",
+	"title": "Record - Block Context Provider",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example of Block Context Provider",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"recordId": {
+			"type": "number"
+		}
+	},
+	"providesContext": {
+		"my-plugin/recordId": "recordId"
+	},
+	"textdomain": "wpvip-learn-enterprise-block-editor",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
