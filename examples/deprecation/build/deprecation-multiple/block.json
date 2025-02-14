@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "my-plugin/custom-block-deprecation-multiple",
+  "version": "0.1.0",
+  "title": "Custom Block Deprecation Multiple",
+  "category": "common",
+  "icon": "smiley",
+  "description": "Example of Block Deprecation Multiple",
+  "example": {},
+  "textdomain": "wpvip-learn-enterprise-block-editor",
+  "editorScript": "file:./index.js"
+}
