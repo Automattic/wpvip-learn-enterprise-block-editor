@@ -29,6 +29,18 @@
 			"step": "writeFile",
 			"path": "/wordpress/wp-content/mu-plugins/rewrite.php",
 			"data": "<?php add_action( 'after_setup_theme', function() { global $wp_rewrite; $wp_rewrite->set_permalink_structure('/%postname%/'); $wp_rewrite->flush_rules(); } );"
+		},
+		{
+			"step": "updateUserMeta",
+			"meta": {
+				"description": "A real WordPress enthusiast"
+			},
+			"userId": 1
 		}
-	]
+	],
+	"preferredVersions": {
+		"php": "8.0",
+		"wp": "latest"
+	},
+	"features": {}
 }
