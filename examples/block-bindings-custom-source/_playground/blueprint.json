@@ -1,6 +1,6 @@
 {
 	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
-	"landingPage": "landingPage": "/block-binding-custom-source-example/",
+	"landingPage": "/block-binding-custom-source-example/",
 	"login": true,
 	"steps": [
 		{
@@ -24,6 +24,11 @@
 				"resource": "url",
 				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/block-bindings-custom-source/_playground/export.xml"
 			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/mu-plugins/rewrite.php",
+			"data": "<?php add_action( 'after_setup_theme', function() { global $wp_rewrite; $wp_rewrite->set_permalink_structure('/%postname%/'); $wp_rewrite->flush_rules(); } );"
 		}
 	]
 }
