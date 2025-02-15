@@ -8,22 +8,22 @@
  * Requires PHP:      7.4
  * Author:            Your Name
  * Author URI:        https://developer.wordpres.org/news
- * Text Domain:       devblog
+ * Text Domain:       wpviplearn
  *
  * @package CreateBlock
  */
 
-add_action( 'init', 'devblog_register_binding_sources' );
+add_action( 'init', 'wpviplearn_register_binding_sources' );
 
 /**
  * Register the block bindings sources.
  */
-function devblog_register_binding_sources() {
+function wpviplearn_register_binding_sources() {
 	register_block_bindings_source(
-		'devblog/post-data',
+		'wpviplearn/post-data',
 		[
-			'label'              => __( 'Post Data', 'devblog' ),
-			'get_value_callback' => 'devblog_post_data_callback',
+			'label'              => __( 'Post Data', 'wpviplearn' ),
+			'get_value_callback' => 'wpviplearn_post_data_callback',
 			'uses_context'       => [ 'postId' ],
 		]
 	);
@@ -36,7 +36,7 @@ function devblog_register_binding_sources() {
  * @param array  $block The block.
  * @param string $name The name.
  */
-function devblog_post_data_callback( $args, $block, $name ) {
+function wpviplearn_post_data_callback( $args, $block, $name ) {
 	if ( ! isset( $args['key'] ) ) {
 		return null;
 	}
@@ -54,12 +54,12 @@ function devblog_post_data_callback( $args, $block, $name ) {
 	return null;
 }
 
-add_action( 'enqueue_block_editor_assets', 'devblog_editor_assets' );
+add_action( 'enqueue_block_editor_assets', 'wpviplearn_editor_assets' );
 
 /**
  * Enqueue the editor assets.
  */
-function devblog_editor_assets() {
+function wpviplearn_editor_assets() {
 	$dir = untrailingslashit( plugin_dir_path( __FILE__ ) );
 	$url = untrailingslashit( plugin_dir_url( __FILE__ ) );
 
@@ -67,13 +67,13 @@ function devblog_editor_assets() {
 		$asset = include "{$dir}/build/js/editor.asset.php";
 
 		wp_enqueue_script(
-			'devblog-editor-bindings',
+			'wpviplearn-transforms-filter',
 			"{$url}/build/js/editor.js",
 			$asset['dependencies'],
 			$asset['version'],
 			true
 		);
 
-		wp_set_script_translations( 'devblog-editor-bindings', 'devblog' );
+		wp_set_script_translations( 'wpviplearn-transforms-filter', 'wpviplearn' );
 	}
 }

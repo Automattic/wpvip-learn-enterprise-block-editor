@@ -9,7 +9,7 @@
 				"resource": "git:directory",
 				"url": "https://github.com/Automattic/wpvip-learn-enterprise-block-editor",
 				"ref": "HEAD",
-				"path": "examples/editor-bindings"
+				"path": "examples/transforms-filter"
 			},
 			"options": {
 				"activate": true
@@ -22,7 +22,7 @@
 			"step": "importWxr",
 			"file": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/editor-bindings/_playground/export.xml"
+				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/transforms-filter/_playground/export.xml"
 			}
 		}
 	]

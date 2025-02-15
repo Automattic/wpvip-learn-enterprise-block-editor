@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "my-plugin/custom-block-deprecation-attributes",
+	"version": "0.1.0",
+	"title": "Custom Block Deprecation Attributes",
+	"category": "common",
+	"attributes": {
+		"headline": { "type": "string", "default": "My Headline" },
+		"body": { "type": "string", "default": "" }
+	},
+	"icon": "smiley",
+	"description": "Example of Block Deprecation Attributes",
+	"example": {},
+	"textdomain": "wpvip-learn-enterprise-block-editor",
+	"editorScript": "file:./index.js"
+}
