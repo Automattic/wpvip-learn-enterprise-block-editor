@@ -67,13 +67,13 @@ function wpviplearn_editor_assets() {
 		$asset = include "{$dir}/build/js/editor.asset.php";
 
 		wp_enqueue_script(
-			'wpviplearn-transforms-filter',
+			'wpviplearn-editor-bindings',
 			"{$url}/build/js/editor.js",
 			$asset['dependencies'],
 			$asset['version'],
 			true
 		);
 
-		wp_set_script_translations( 'wpviplearn-transforms-filter', 'wpviplearn' );
+		wp_set_script_translations( 'wpviplearn-editor-bindings', 'wpviplearn' );
 	}
 }
