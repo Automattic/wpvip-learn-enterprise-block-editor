@@ -1,6 +1,6 @@
 {
 	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
-	"landingPage": "/wp-admin/post.php?post=1&action=edit",
+	"landingPage": "/wp-admin/post.php?post=10&action=edit",
 	"login": true,
 	"steps": [
 		{
@@ -13,6 +13,16 @@
 			},
 			"options": {
 				"activate": true
+			}
+		},
+		{
+			"step": "resetData"
+		},
+		{
+			"step": "importWxr",
+			"file": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/block-variations-quote/_playground/export.xml"
 			}
 		}
 	]
