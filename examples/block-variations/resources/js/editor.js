@@ -62,3 +62,21 @@ createVariation(
 		],
 	]
 );
+
+wp.blocks.unregisterBlockVariation( 'core/embed', 'youtube' );
+wp.hooks.addFilter(
+	'blocks.registerBlockVariation',
+	'wpviplearn/modify-variations',
+	( variation, name ) => {
+		if ( name === 'core/embed' && variation.name === 'youtube' ) {
+			return {
+				...variation,
+				attributes: {
+					...variation.attributes,
+					align: 'wide',
+				},
+			};
+		}
+		return variation;
+	}
+);
