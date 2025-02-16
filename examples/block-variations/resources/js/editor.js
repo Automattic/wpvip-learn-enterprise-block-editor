@@ -63,7 +63,7 @@ createVariation(
 	]
 );
 
-wp.blocks.unregisterBlockVariation( 'core/embed', 'wordpress' );
+wp.blocks.unregisterBlockVariation( 'core/embed', 'youtube' );
 wp.hooks.addFilter(
 	'blocks.registerBlockVariation',
 	'wpviplearn/modify-variations',

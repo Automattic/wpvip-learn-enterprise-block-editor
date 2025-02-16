@@ -24,6 +24,7 @@ function wpviplearn_editor_assets() {
 		plugins_url( 'resources/js/editor.js', __FILE__ ),
 		array(
 			'wp-blocks',
+			'wp-hooks',
 			'wp-dom-ready',
 			'wp-i18n',
 		),

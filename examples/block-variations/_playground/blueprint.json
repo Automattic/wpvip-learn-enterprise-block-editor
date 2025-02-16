@@ -25,5 +25,12 @@
 				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/block-variations/_playground/export.xml"
 			}
 		}
-	]
+	],
+	"preferredVersions": {
+		"php": "8.0",
+		"wp": "latest"
+	},
+	"features": {
+		"networking": true
+	}
 }
