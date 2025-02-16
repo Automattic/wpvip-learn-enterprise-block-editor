@@ -65,7 +65,13 @@ const isQuoteAPIEditorVariation = ( props ) => {
 	return namespace && namespace === 'quote-random-editor';
 };
 
-export const QuoteAPIEditorInspectorControls = ( props ) => {
+/**
+ * The inspector controls for the "quote-random-editor" variation.
+ *
+ * @param {Object} props The component props
+ * @return {Function} - A modified version of the BlockEdit component with added inspector controls.
+ */
+const QuoteAPIEditorInspectorControls = ( props ) => {
 	const { clientId, setAttributes } = props;
 
 	const onClickUpdateData = () => {
