@@ -29,3 +29,5 @@ By running `npm run setup` from the root of the project you'll:
         -   [context](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/context) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/context/_playground/blueprint.json))
     -   Lesson 4.4: Deprecation
         -   [deprecation](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/deprecation) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/deprecation/_playground/blueprint.json))
+    -   Lesson 4.5: Transforms
+        -   [transforms-filter](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/transforms-filter) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/transforms-filter/_playground/blueprint.json))
