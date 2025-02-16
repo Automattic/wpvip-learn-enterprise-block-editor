@@ -1,0 +1,18 @@
+[
+	{
+		"author": "John Doe",
+		"content": "This is a quote"
+	},
+	{
+		"author": "Jane Doe",
+		"content": "This is another quote"
+	},
+	{
+		"author": "John Smith",
+		"content": "This is a third quote"
+	},
+	{
+		"author": "Jane Smith",
+		"content": "This is a fourth quote"
+	}
+]
