@@ -25,5 +25,8 @@
 				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/modify-block-variation/_playground/export.xml"
 			}
 		}
-	]
+	],
+	"features": {
+		"networking": true
+	}
 }
