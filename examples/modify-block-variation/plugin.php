@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Wp Vip Learn Unregister Block Variations 
+ * Plugin Name:       Wp Vip Learn Modify Block Variations
  * Plugin URI:        https://developer.wordpress.org/news
  * Description:       Exploring the Block Variations API in the editor.
  * Version:           1.0.0
@@ -26,7 +26,6 @@ function wpviplearn_editor_assets() {
 			'wp-blocks',
 			'wp-data',
 			'wp-hooks',
-			'wp-dom-ready',
 			'wp-i18n',
 		),
 		wp_get_theme()->get( 'Version' ),
