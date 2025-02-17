@@ -19,6 +19,7 @@ By running `npm run setup` from the root of the project you'll:
 ## Examples
 
 -   Module 4: Advanced Block Development
+
     -   Lesson 4.1: Bindings
         -   [block-bindings-custom-source](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-bindings-custom-source) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-bindings-custom-source/_playground/blueprint.json))
         -   [block-bindings-post-meta](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-bindings-post-meta) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-bindings-post-meta/_playground/blueprint.json))
@@ -32,5 +33,7 @@ By running `npm run setup` from the root of the project you'll:
     -   Lesson 4.5: Transforms
         -   [transforms-filter](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/transforms-filter) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/transforms-filter/_playground/blueprint.json))
     -   Lesson 4.6: Block Variations
+
         -   [block-variations](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-variations) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-variations/_playground/blueprint.json))
         -   [block-variations-quote](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-variations-quote) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-variations-quote/_playground/blueprint.json))
+        -   [unregister-block-variations](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/unregister-block-variations) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/unregister-block-variations/_playground/blueprint.json))
