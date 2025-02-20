@@ -40,7 +40,7 @@ By running `npm run setup` from the root of the project you'll:
         -   [modify-block-variation](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/modify-block-variation) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/modify-block-variation/_playground/blueprint.json))
 
 -   Module 6: Customizing the Editor Experience
--   -   Lesson 6.1: Custom Block Panels and Inspectors
+    -   Lesson 6.1: Custom Block Panels and Inspectors
         -   [inspector-controls-filter-blockEdit](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/inspector-controls-filter-blockEdit) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/inspector-controls-filter-blockEdit/_playground/blueprint.json))
     -   Lesson 6.2: Slot & Fill System
         -   [slot-fills](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/slot-fills) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/slot-fills/_playground/blueprint.json))
