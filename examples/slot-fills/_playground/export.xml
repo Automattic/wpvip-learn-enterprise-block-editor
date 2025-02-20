@@ -185,7 +185,7 @@
 			<wp:is_sticky>0</wp:is_sticky>
 			<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
 			<wp:comment>
-				<wp:comment_id>1</wp:comment_id>
+				<wp:comment_id>10</wp:comment_id>
 				<wp:comment_author><![CDATA[A WordPress Commenter]]></wp:comment_author>
 				<wp:comment_author_email><![CDATA[wapuu@wordpress.example]]></wp:comment_author_email>
 				<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
