@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/6.7.2" created="2025-02-20 20:46" -->
+<!-- generator="WordPress/6.7.2" created="2025-02-20 20:51" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -28,7 +28,7 @@
 		<title>My WordPress Website</title>
 		<link>http://localhost:8881</link>
 		<description></description>
-		<pubDate>Thu, 20 Feb 2025 20:46:24 +0000</pubDate>
+		<pubDate>Thu, 20 Feb 2025 20:51:00 +0000</pubDate>
 		<language>en-US</language>
 		<wp:wxr_version>1.2</wp:wxr_version>
 		<wp:base_site_url>http://localhost:8881</wp:base_site_url>
@@ -54,8 +54,6 @@
 			<guid isPermaLink="false">http://localhost:8882/?p=1</guid>
 			<description></description>
 			<content:encoded><![CDATA[<!-- wp:paragraph -->
-
-
 <p>The following Slot and Fills registered:</p>
 <!-- /wp:paragraph -->
 
@@ -64,7 +62,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":17,"width":"292px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/slot-fills/_playground/images/avatars.png" alt="" class="wp-image-17" style="width:292px;height:auto"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/slot-fills/_playground/images//NoteTakingSidebar-PluginSidebar.png" alt="" class="wp-image-17" style="width:292px;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -72,7 +70,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":18,"width":"402px","height":"auto","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/slot-fills/_playground/images/avatars.png" alt="" class="wp-image-18" style="width:402px;height:auto"/></figure>
+<figure class="wp-block-image size-large is-resized"><img src="https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/slot-fills/_playground/images/CopyBlockAsJsonMenuItem-PluginBlockSettingsMenuItem.png" alt="" class="wp-image-18" style="width:402px;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -80,7 +78,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":19,"width":"304px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/slot-fills/_playground/images/avatars.png" alt="" class="wp-image-19" style="width:304px;height:auto"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/slot-fills/_playground/images/NoteTakingSidebar-PluginSidebar.png" alt="" class="wp-image-19" style="width:304px;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -171,7 +169,7 @@
 <p>Phasellus tincidunt, justo at pellentesque vulputate, massa enim molestie lacus, vel consequat diam felis quis dolor. Nam rutrum arcu a lectus auctor, nec molestie mauris gravida. Nulla facilisi. Ut molestie ut elit eget rhoncus. Nullam blandit fringilla tortor non egestas. Aliquam imperdiet in quam et mollis. Pellentesque accumsan tincidunt tortor, eget mattis velit malesuada ut. Integer elit nunc, pharetra sed urna et, dignissim tincidunt urna. Sed pretium purus non nunc porttitor porta. Etiam ornare scelerisque arcu ac cursus.</p>
 <!-- /wp:paragraph -->]]></content:encoded>
 			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-			<wp:post_id>10</wp:post_id>
+			<wp:post_id>1</wp:post_id>
 			<wp:post_date><![CDATA[2025-02-19 13:03:44]]></wp:post_date>
 			<wp:post_date_gmt><![CDATA[2025-02-19 13:03:44]]></wp:post_date_gmt>
 			<wp:post_modified><![CDATA[2025-02-20 20:46:14]]></wp:post_modified>
@@ -202,270 +200,6 @@ Commenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.]]></wp
 				<wp:comment_parent>0</wp:comment_parent>
 				<wp:comment_user_id>0</wp:comment_user_id>
 			</wp:comment>
-		</item>
-		<item>
-			<title><![CDATA[Screenshot 2025-02-20 at 20.37.26]]></title>
-			<link>http://localhost:8881/?attachment_id=12</link>
-			<pubDate>Thu, 20 Feb 2025 20:38:16 +0000</pubDate>
-			<dc:creator><![CDATA[admin]]></dc:creator>
-			<guid isPermaLink="false">http://localhost:8881/wp-content/uploads/2025/02/Screenshot-2025-02-20-at-20.37.26.png</guid>
-			<description></description>
-			<content:encoded><![CDATA[]]></content:encoded>
-			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-			<wp:post_id>12</wp:post_id>
-			<wp:post_date><![CDATA[2025-02-20 20:38:16]]></wp:post_date>
-			<wp:post_date_gmt><![CDATA[2025-02-20 20:38:16]]></wp:post_date_gmt>
-			<wp:post_modified><![CDATA[2025-02-20 20:38:16]]></wp:post_modified>
-			<wp:post_modified_gmt><![CDATA[2025-02-20 20:38:16]]></wp:post_modified_gmt>
-			<wp:comment_status><![CDATA[open]]></wp:comment_status>
-			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-			<wp:post_name><![CDATA[screenshot-2025-02-20-at-20-37-26]]></wp:post_name>
-			<wp:status><![CDATA[inherit]]></wp:status>
-			<wp:post_parent>1</wp:post_parent>
-			<wp:menu_order>0</wp:menu_order>
-			<wp:post_type><![CDATA[attachment]]></wp:post_type>
-			<wp:post_password><![CDATA[]]></wp:post_password>
-			<wp:is_sticky>0</wp:is_sticky>
-			<wp:attachment_url><![CDATA[http://localhost:8881/wp-content/uploads/2025/02/Screenshot-2025-02-20-at-20.37.26.png]]></wp:attachment_url>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-				<wp:meta_value><![CDATA[2025/02/Screenshot-2025-02-20-at-20.37.26.png]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-				<wp:meta_value><![CDATA[a:6:{s:5:"width";i:656;s:6:"height";i:856;s:4:"file";s:45:"2025/02/Screenshot-2025-02-20-at-20.37.26.png";s:8:"filesize";i:61937;s:5:"sizes";a:2:{s:6:"medium";a:5:{s:4:"file";s:45:"Screenshot-2025-02-20-at-20.37.26-230x300.png";s:5:"width";i:230;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:17410;}s:9:"thumbnail";a:5:{s:4:"file";s:45:"Screenshot-2025-02-20-at-20.37.26-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:7791;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-			</wp:postmeta>
-		</item>
-		<item>
-			<title><![CDATA[Screenshot 2025-02-20 at 20.37.06]]></title>
-			<link>http://localhost:8881/?attachment_id=13</link>
-			<pubDate>Thu, 20 Feb 2025 20:39:51 +0000</pubDate>
-			<dc:creator><![CDATA[admin]]></dc:creator>
-			<guid isPermaLink="false">http://localhost:8881/wp-content/uploads/2025/02/Screenshot-2025-02-20-at-20.37.06.png</guid>
-			<description></description>
-			<content:encoded><![CDATA[]]></content:encoded>
-			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-			<wp:post_id>13</wp:post_id>
-			<wp:post_date><![CDATA[2025-02-20 20:39:51]]></wp:post_date>
-			<wp:post_date_gmt><![CDATA[2025-02-20 20:39:51]]></wp:post_date_gmt>
-			<wp:post_modified><![CDATA[2025-02-20 20:39:51]]></wp:post_modified>
-			<wp:post_modified_gmt><![CDATA[2025-02-20 20:39:51]]></wp:post_modified_gmt>
-			<wp:comment_status><![CDATA[open]]></wp:comment_status>
-			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-			<wp:post_name><![CDATA[screenshot-2025-02-20-at-20-37-06]]></wp:post_name>
-			<wp:status><![CDATA[inherit]]></wp:status>
-			<wp:post_parent>1</wp:post_parent>
-			<wp:menu_order>0</wp:menu_order>
-			<wp:post_type><![CDATA[attachment]]></wp:post_type>
-			<wp:post_password><![CDATA[]]></wp:post_password>
-			<wp:is_sticky>0</wp:is_sticky>
-			<wp:attachment_url><![CDATA[http://localhost:8881/wp-content/uploads/2025/02/Screenshot-2025-02-20-at-20.37.06.png]]></wp:attachment_url>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-				<wp:meta_value><![CDATA[2025/02/Screenshot-2025-02-20-at-20.37.06.png]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-				<wp:meta_value><![CDATA[a:6:{s:5:"width";i:1490;s:6:"height";i:1444;s:4:"file";s:45:"2025/02/Screenshot-2025-02-20-at-20.37.06.png";s:8:"filesize";i:329360;s:5:"sizes";a:4:{s:6:"medium";a:5:{s:4:"file";s:45:"Screenshot-2025-02-20-at-20.37.06-300x291.png";s:5:"width";i:300;s:6:"height";i:291;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:57257;}s:5:"large";a:5:{s:4:"file";s:46:"Screenshot-2025-02-20-at-20.37.06-1024x992.png";s:5:"width";i:1024;s:6:"height";i:992;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:329540;}s:9:"thumbnail";a:5:{s:4:"file";s:45:"Screenshot-2025-02-20-at-20.37.06-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:19669;}s:12:"medium_large";a:5:{s:4:"file";s:45:"Screenshot-2025-02-20-at-20.37.06-768x744.png";s:5:"width";i:768;s:6:"height";i:744;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:222642;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-			</wp:postmeta>
-		</item>
-		<item>
-			<title><![CDATA[Screenshot 2025-02-20 at 20.37.06]]></title>
-			<link>http://localhost:8881/?attachment_id=14</link>
-			<pubDate>Thu, 20 Feb 2025 20:40:49 +0000</pubDate>
-			<dc:creator><![CDATA[admin]]></dc:creator>
-			<guid isPermaLink="false">http://localhost:8881/wp-content/uploads/2025/02/Screenshot-2025-02-20-at-20.37.06-1.png</guid>
-			<description></description>
-			<content:encoded><![CDATA[]]></content:encoded>
-			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-			<wp:post_id>14</wp:post_id>
-			<wp:post_date><![CDATA[2025-02-20 20:40:49]]></wp:post_date>
-			<wp:post_date_gmt><![CDATA[2025-02-20 20:40:49]]></wp:post_date_gmt>
-			<wp:post_modified><![CDATA[2025-02-20 20:40:49]]></wp:post_modified>
-			<wp:post_modified_gmt><![CDATA[2025-02-20 20:40:49]]></wp:post_modified_gmt>
-			<wp:comment_status><![CDATA[open]]></wp:comment_status>
-			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-			<wp:post_name><![CDATA[screenshot-2025-02-20-at-20-37-06-2]]></wp:post_name>
-			<wp:status><![CDATA[inherit]]></wp:status>
-			<wp:post_parent>1</wp:post_parent>
-			<wp:menu_order>0</wp:menu_order>
-			<wp:post_type><![CDATA[attachment]]></wp:post_type>
-			<wp:post_password><![CDATA[]]></wp:post_password>
-			<wp:is_sticky>0</wp:is_sticky>
-			<wp:attachment_url><![CDATA[http://localhost:8881/wp-content/uploads/2025/02/Screenshot-2025-02-20-at-20.37.06-1.png]]></wp:attachment_url>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-				<wp:meta_value><![CDATA[2025/02/Screenshot-2025-02-20-at-20.37.06-1.png]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-				<wp:meta_value><![CDATA[a:6:{s:5:"width";i:1490;s:6:"height";i:1444;s:4:"file";s:47:"2025/02/Screenshot-2025-02-20-at-20.37.06-1.png";s:8:"filesize";i:308679;s:5:"sizes";a:4:{s:6:"medium";a:5:{s:4:"file";s:47:"Screenshot-2025-02-20-at-20.37.06-1-300x291.png";s:5:"width";i:300;s:6:"height";i:291;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:58152;}s:5:"large";a:5:{s:4:"file";s:48:"Screenshot-2025-02-20-at-20.37.06-1-1024x992.png";s:5:"width";i:1024;s:6:"height";i:992;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:332373;}s:9:"thumbnail";a:5:{s:4:"file";s:47:"Screenshot-2025-02-20-at-20.37.06-1-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:20182;}s:12:"medium_large";a:5:{s:4:"file";s:47:"Screenshot-2025-02-20-at-20.37.06-1-768x744.png";s:5:"width";i:768;s:6:"height";i:744;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:224738;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-			</wp:postmeta>
-		</item>
-		<item>
-			<title><![CDATA[Screenshot 2025-02-20 at 20.37.26]]></title>
-			<link>http://localhost:8881/?attachment_id=15</link>
-			<pubDate>Thu, 20 Feb 2025 20:41:52 +0000</pubDate>
-			<dc:creator><![CDATA[admin]]></dc:creator>
-			<guid isPermaLink="false">http://localhost:8881/wp-content/uploads/2025/02/Screenshot-2025-02-20-at-20.37.26-1.png</guid>
-			<description></description>
-			<content:encoded><![CDATA[]]></content:encoded>
-			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-			<wp:post_id>15</wp:post_id>
-			<wp:post_date><![CDATA[2025-02-20 20:41:52]]></wp:post_date>
-			<wp:post_date_gmt><![CDATA[2025-02-20 20:41:52]]></wp:post_date_gmt>
-			<wp:post_modified><![CDATA[2025-02-20 20:41:52]]></wp:post_modified>
-			<wp:post_modified_gmt><![CDATA[2025-02-20 20:41:52]]></wp:post_modified_gmt>
-			<wp:comment_status><![CDATA[open]]></wp:comment_status>
-			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-			<wp:post_name><![CDATA[screenshot-2025-02-20-at-20-37-26-2]]></wp:post_name>
-			<wp:status><![CDATA[inherit]]></wp:status>
-			<wp:post_parent>1</wp:post_parent>
-			<wp:menu_order>0</wp:menu_order>
-			<wp:post_type><![CDATA[attachment]]></wp:post_type>
-			<wp:post_password><![CDATA[]]></wp:post_password>
-			<wp:is_sticky>0</wp:is_sticky>
-			<wp:attachment_url><![CDATA[http://localhost:8881/wp-content/uploads/2025/02/Screenshot-2025-02-20-at-20.37.26-1.png]]></wp:attachment_url>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-				<wp:meta_value><![CDATA[2025/02/Screenshot-2025-02-20-at-20.37.26-1.png]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-				<wp:meta_value><![CDATA[a:6:{s:5:"width";i:656;s:6:"height";i:856;s:4:"file";s:47:"2025/02/Screenshot-2025-02-20-at-20.37.26-1.png";s:8:"filesize";i:60569;s:5:"sizes";a:2:{s:6:"medium";a:5:{s:4:"file";s:47:"Screenshot-2025-02-20-at-20.37.26-1-230x300.png";s:5:"width";i:230;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:18382;}s:9:"thumbnail";a:5:{s:4:"file";s:47:"Screenshot-2025-02-20-at-20.37.26-1-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:8341;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-			</wp:postmeta>
-		</item>
-		<item>
-			<title><![CDATA[Screenshot 2025-02-20 at 20.37.26]]></title>
-			<link>http://localhost:8881/?attachment_id=16</link>
-			<pubDate>Thu, 20 Feb 2025 20:43:01 +0000</pubDate>
-			<dc:creator><![CDATA[admin]]></dc:creator>
-			<guid isPermaLink="false">http://localhost:8881/wp-content/uploads/2025/02/Screenshot-2025-02-20-at-20.37.26-2.png</guid>
-			<description></description>
-			<content:encoded><![CDATA[]]></content:encoded>
-			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-			<wp:post_id>16</wp:post_id>
-			<wp:post_date><![CDATA[2025-02-20 20:43:01]]></wp:post_date>
-			<wp:post_date_gmt><![CDATA[2025-02-20 20:43:01]]></wp:post_date_gmt>
-			<wp:post_modified><![CDATA[2025-02-20 20:43:01]]></wp:post_modified>
-			<wp:post_modified_gmt><![CDATA[2025-02-20 20:43:01]]></wp:post_modified_gmt>
-			<wp:comment_status><![CDATA[open]]></wp:comment_status>
-			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-			<wp:post_name><![CDATA[screenshot-2025-02-20-at-20-37-26-3]]></wp:post_name>
-			<wp:status><![CDATA[inherit]]></wp:status>
-			<wp:post_parent>1</wp:post_parent>
-			<wp:menu_order>0</wp:menu_order>
-			<wp:post_type><![CDATA[attachment]]></wp:post_type>
-			<wp:post_password><![CDATA[]]></wp:post_password>
-			<wp:is_sticky>0</wp:is_sticky>
-			<wp:attachment_url><![CDATA[http://localhost:8881/wp-content/uploads/2025/02/Screenshot-2025-02-20-at-20.37.26-2.png]]></wp:attachment_url>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-				<wp:meta_value><![CDATA[2025/02/Screenshot-2025-02-20-at-20.37.26-2.png]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-				<wp:meta_value><![CDATA[a:6:{s:5:"width";i:656;s:6:"height";i:856;s:4:"file";s:47:"2025/02/Screenshot-2025-02-20-at-20.37.26-2.png";s:8:"filesize";i:60569;s:5:"sizes";a:2:{s:6:"medium";a:5:{s:4:"file";s:47:"Screenshot-2025-02-20-at-20.37.26-2-230x300.png";s:5:"width";i:230;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:18382;}s:9:"thumbnail";a:5:{s:4:"file";s:47:"Screenshot-2025-02-20-at-20.37.26-2-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:8341;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-			</wp:postmeta>
-		</item>
-		<item>
-			<title><![CDATA[NoteTakingSidebar-PluginSidebar]]></title>
-			<link>http://localhost:8881/?attachment_id=17</link>
-			<pubDate>Thu, 20 Feb 2025 20:44:40 +0000</pubDate>
-			<dc:creator><![CDATA[admin]]></dc:creator>
-			<guid isPermaLink="false">http://localhost:8881/wp-content/uploads/2025/02/NoteTakingSidebar-PluginSidebar.png</guid>
-			<description></description>
-			<content:encoded><![CDATA[]]></content:encoded>
-			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-			<wp:post_id>17</wp:post_id>
-			<wp:post_date><![CDATA[2025-02-20 20:44:40]]></wp:post_date>
-			<wp:post_date_gmt><![CDATA[2025-02-20 20:44:40]]></wp:post_date_gmt>
-			<wp:post_modified><![CDATA[2025-02-20 20:44:40]]></wp:post_modified>
-			<wp:post_modified_gmt><![CDATA[2025-02-20 20:44:40]]></wp:post_modified_gmt>
-			<wp:comment_status><![CDATA[open]]></wp:comment_status>
-			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-			<wp:post_name><![CDATA[notetakingsidebar-pluginsidebar]]></wp:post_name>
-			<wp:status><![CDATA[inherit]]></wp:status>
-			<wp:post_parent>1</wp:post_parent>
-			<wp:menu_order>0</wp:menu_order>
-			<wp:post_type><![CDATA[attachment]]></wp:post_type>
-			<wp:post_password><![CDATA[]]></wp:post_password>
-			<wp:is_sticky>0</wp:is_sticky>
-			<wp:attachment_url><![CDATA[http://localhost:8881/wp-content/uploads/2025/02/NoteTakingSidebar-PluginSidebar.png]]></wp:attachment_url>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-				<wp:meta_value><![CDATA[2025/02/NoteTakingSidebar-PluginSidebar.png]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-				<wp:meta_value><![CDATA[a:6:{s:5:"width";i:656;s:6:"height";i:856;s:4:"file";s:43:"2025/02/NoteTakingSidebar-PluginSidebar.png";s:8:"filesize";i:60569;s:5:"sizes";a:2:{s:6:"medium";a:5:{s:4:"file";s:43:"NoteTakingSidebar-PluginSidebar-230x300.png";s:5:"width";i:230;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:18382;}s:9:"thumbnail";a:5:{s:4:"file";s:43:"NoteTakingSidebar-PluginSidebar-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:8341;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-			</wp:postmeta>
-		</item>
-		<item>
-			<title><![CDATA[CopyBlockAsJsonMenuItem-PluginBlockSettingsMenuItem]]></title>
-			<link>http://localhost:8881/?attachment_id=18</link>
-			<pubDate>Thu, 20 Feb 2025 20:44:53 +0000</pubDate>
-			<dc:creator><![CDATA[admin]]></dc:creator>
-			<guid isPermaLink="false">http://localhost:8881/wp-content/uploads/2025/02/CopyBlockAsJsonMenuItem-PluginBlockSettingsMenuItem.png</guid>
-			<description></description>
-			<content:encoded><![CDATA[]]></content:encoded>
-			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-			<wp:post_id>18</wp:post_id>
-			<wp:post_date><![CDATA[2025-02-20 20:44:53]]></wp:post_date>
-			<wp:post_date_gmt><![CDATA[2025-02-20 20:44:53]]></wp:post_date_gmt>
-			<wp:post_modified><![CDATA[2025-02-20 20:44:53]]></wp:post_modified>
-			<wp:post_modified_gmt><![CDATA[2025-02-20 20:44:53]]></wp:post_modified_gmt>
-			<wp:comment_status><![CDATA[open]]></wp:comment_status>
-			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-			<wp:post_name><![CDATA[copyblockasjsonmenuitem-pluginblocksettingsmenuitem]]></wp:post_name>
-			<wp:status><![CDATA[inherit]]></wp:status>
-			<wp:post_parent>1</wp:post_parent>
-			<wp:menu_order>0</wp:menu_order>
-			<wp:post_type><![CDATA[attachment]]></wp:post_type>
-			<wp:post_password><![CDATA[]]></wp:post_password>
-			<wp:is_sticky>0</wp:is_sticky>
-			<wp:attachment_url><![CDATA[http://localhost:8881/wp-content/uploads/2025/02/CopyBlockAsJsonMenuItem-PluginBlockSettingsMenuItem.png]]></wp:attachment_url>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-				<wp:meta_value><![CDATA[2025/02/CopyBlockAsJsonMenuItem-PluginBlockSettingsMenuItem.png]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-				<wp:meta_value><![CDATA[a:6:{s:5:"width";i:1490;s:6:"height";i:1444;s:4:"file";s:63:"2025/02/CopyBlockAsJsonMenuItem-PluginBlockSettingsMenuItem.png";s:8:"filesize";i:308679;s:5:"sizes";a:4:{s:6:"medium";a:5:{s:4:"file";s:63:"CopyBlockAsJsonMenuItem-PluginBlockSettingsMenuItem-300x291.png";s:5:"width";i:300;s:6:"height";i:291;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:58152;}s:5:"large";a:5:{s:4:"file";s:64:"CopyBlockAsJsonMenuItem-PluginBlockSettingsMenuItem-1024x992.png";s:5:"width";i:1024;s:6:"height";i:992;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:332373;}s:9:"thumbnail";a:5:{s:4:"file";s:63:"CopyBlockAsJsonMenuItem-PluginBlockSettingsMenuItem-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:20182;}s:12:"medium_large";a:5:{s:4:"file";s:63:"CopyBlockAsJsonMenuItem-PluginBlockSettingsMenuItem-768x744.png";s:5:"width";i:768;s:6:"height";i:744;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:224738;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-			</wp:postmeta>
-		</item>
-		<item>
-			<title><![CDATA[NoteTakingSidebar-PluginSidebar]]></title>
-			<link>http://localhost:8881/?attachment_id=19</link>
-			<pubDate>Thu, 20 Feb 2025 20:45:09 +0000</pubDate>
-			<dc:creator><![CDATA[admin]]></dc:creator>
-			<guid isPermaLink="false">http://localhost:8881/wp-content/uploads/2025/02/NoteTakingSidebar-PluginSidebar-1.png</guid>
-			<description></description>
-			<content:encoded><![CDATA[]]></content:encoded>
-			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-			<wp:post_id>19</wp:post_id>
-			<wp:post_date><![CDATA[2025-02-20 20:45:09]]></wp:post_date>
-			<wp:post_date_gmt><![CDATA[2025-02-20 20:45:09]]></wp:post_date_gmt>
-			<wp:post_modified><![CDATA[2025-02-20 20:45:09]]></wp:post_modified>
-			<wp:post_modified_gmt><![CDATA[2025-02-20 20:45:09]]></wp:post_modified_gmt>
-			<wp:comment_status><![CDATA[open]]></wp:comment_status>
-			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-			<wp:post_name><![CDATA[notetakingsidebar-pluginsidebar-2]]></wp:post_name>
-			<wp:status><![CDATA[inherit]]></wp:status>
-			<wp:post_parent>1</wp:post_parent>
-			<wp:menu_order>0</wp:menu_order>
-			<wp:post_type><![CDATA[attachment]]></wp:post_type>
-			<wp:post_password><![CDATA[]]></wp:post_password>
-			<wp:is_sticky>0</wp:is_sticky>
-			<wp:attachment_url><![CDATA[http://localhost:8881/wp-content/uploads/2025/02/NoteTakingSidebar-PluginSidebar-1.png]]></wp:attachment_url>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-				<wp:meta_value><![CDATA[2025/02/NoteTakingSidebar-PluginSidebar-1.png]]></wp:meta_value>
-			</wp:postmeta>
-			<wp:postmeta>
-				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-				<wp:meta_value><![CDATA[a:6:{s:5:"width";i:656;s:6:"height";i:856;s:4:"file";s:45:"2025/02/NoteTakingSidebar-PluginSidebar-1.png";s:8:"filesize";i:60569;s:5:"sizes";a:2:{s:6:"medium";a:5:{s:4:"file";s:45:"NoteTakingSidebar-PluginSidebar-1-230x300.png";s:5:"width";i:230;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:18382;}s:9:"thumbnail";a:5:{s:4:"file";s:45:"NoteTakingSidebar-PluginSidebar-1-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:8341;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-			</wp:postmeta>
 		</item>
 	</channel>
 </rss>
