@@ -1,8 +1,8 @@
 {
 	"name": "wpviplearn-block-variations-quote",
 	"scripts": {
-		"start": "wp-scripts start --webpack-src-dir=resources",
-		"build": "wp-scripts build --webpack-src-dir=resources"
+		"start": "wp-scripts start",
+		"build": "wp-scripts build"
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^30.11.0",

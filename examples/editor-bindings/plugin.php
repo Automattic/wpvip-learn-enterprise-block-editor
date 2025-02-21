@@ -63,12 +63,12 @@ function wpviplearn_editor_assets() {
 	$dir = untrailingslashit( plugin_dir_path( __FILE__ ) );
 	$url = untrailingslashit( plugin_dir_url( __FILE__ ) );
 
-	if ( file_exists( "{$dir}/build/js/editor.asset.php" ) ) {
-		$asset = include "{$dir}/build/js/editor.asset.php";
+	if ( file_exists( "{$dir}/build/index.asset.php" ) ) {
+		$asset = include "{$dir}/build/index.asset.php";
 
 		wp_enqueue_script(
 			'wpviplearn-editor-bindings',
-			"{$url}/build/js/editor.js",
+			"{$url}/build/index.js",
 			$asset['dependencies'],
 			$asset['version'],
 			true
