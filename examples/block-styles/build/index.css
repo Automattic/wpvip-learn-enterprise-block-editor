@@ -1,0 +1,14 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/index.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.wp-block-image.is-style-hand-drawn-js img {
+  color: inherit;
+  border: 3px dashed currentcolor;
+  overflow: hidden;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50px 5px 50px 5px/5px 50px 5px 50px !important;
+  transform: rotate(2deg);
+  padding: 10px;
+}
+
+/*# sourceMappingURL=index.css.map*/
