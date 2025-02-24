@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/6.7.2" created="2025-02-20 20:34" -->
+<!-- generator="WordPress/6.7.1" created="2025-02-24 12:40" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -26,13 +26,13 @@
 
 	<channel>
 		<title>My WordPress Website</title>
-		<link>http://localhost:8881</link>
+		<link>https://playground.wordpress.net/scope:clever-abandoned-school</link>
 		<description></description>
-		<pubDate>Thu, 20 Feb 2025 20:34:55 +0000</pubDate>
+		<pubDate>Mon, 24 Feb 2025 12:40:33 +0000</pubDate>
 		<language>en-US</language>
 		<wp:wxr_version>1.2</wp:wxr_version>
-		<wp:base_site_url>http://localhost:8881</wp:base_site_url>
-		<wp:base_blog_url>http://localhost:8881</wp:base_blog_url>
+		<wp:base_site_url>https://playground.wordpress.net/scope:clever-abandoned-school</wp:base_site_url>
+		<wp:base_blog_url>https://playground.wordpress.net/scope:clever-abandoned-school</wp:base_blog_url>
 
 		<wp:author>
 			<wp:author_id>1</wp:author_id>
@@ -44,25 +44,32 @@
 		</wp:author>
 
 
-		<generator>https://wordpress.org/?v=6.7.2</generator>
+		<generator>https://wordpress.org/?v=6.7.1</generator>
 
 		<item>
 			<title><![CDATA[Enhancing a core image block with custom size controls]]></title>
-			<link>http://localhost:8881/?p=1</link>
+			<link>https://playground.wordpress.net/scope:clever-abandoned-school/2025/02/20/hello-world/</link>
 			<pubDate>Thu, 20 Feb 2025 20:25:16 +0000</pubDate>
 			<dc:creator><![CDATA[admin]]></dc:creator>
 			<guid isPermaLink="false">http://localhost:8881/?p=1</guid>
 			<description></description>
-			<content:encoded><![CDATA[<!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere faucibus enim a auctor. Nullam pretium, est sed tempus luctus, turpis dui lobortis ante, iaculis volutpat mauris libero id orci. Integer venenatis vehicula dolor. Nullam eget velit massa. Sed congue et elit eget pretium. Cras lacinia neque sapien, in sodales lorem tempus eu. Nullam aliquam ligula finibus augue suscipit mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam cursus volutpat pharetra. Phasellus est turpis, condimentum vitae neque vitae, malesuada ultricies mi.</p>
+			<content:encoded><![CDATA[<!-- wp:paragraph {"style":{"color":{"background":"#ffee5921"}}} -->
+<p class="has-background" style="background-color:#ffee5921">Select the image and look for the "Image Size Settings" area on the Sidebar Panel </p>
 <!-- /wp:paragraph -->
-]]>			</content:encoded>
+
+<!-- wp:image {"id":12,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/block-filters-block-edit/_playground/images/ai-generated-image.png" alt="" class="wp-image-12"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere faucibus enim a auctor. Nullam pretium, est sed tempus luctus, turpis dui lobortis ante, iaculis volutpat mauris libero id orci. Integer venenatis vehicula dolor. Nullam eget velit massa. Sed congue et elit eget pretium. Cras lacinia neque sapien, in sodales lorem tempus eu. Nullam aliquam ligula finibus augue suscipit mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam cursus volutpat pharetra. Phasellus est turpis, condimentum vitae neque vitae, malesuada ultricies mi.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
 			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 			<wp:post_id>10</wp:post_id>
 			<wp:post_date><![CDATA[2025-02-20 20:25:16]]></wp:post_date>
 			<wp:post_date_gmt><![CDATA[2025-02-20 20:25:16]]></wp:post_date_gmt>
-			<wp:post_modified><![CDATA[2025-02-20 20:34:40]]></wp:post_modified>
-			<wp:post_modified_gmt><![CDATA[2025-02-20 20:34:40]]></wp:post_modified_gmt>
+			<wp:post_modified><![CDATA[2025-02-24 12:40:21]]></wp:post_modified>
+			<wp:post_modified_gmt><![CDATA[2025-02-24 12:40:21]]></wp:post_modified_gmt>
 			<wp:comment_status><![CDATA[open]]></wp:comment_status>
 			<wp:ping_status><![CDATA[open]]></wp:ping_status>
 			<wp:post_name><![CDATA[hello-world]]></wp:post_name>
@@ -73,6 +80,22 @@
 			<wp:post_password><![CDATA[]]></wp:post_password>
 			<wp:is_sticky>0</wp:is_sticky>
 			<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_pingme]]></wp:meta_key>
+				<wp:meta_value><![CDATA[1]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_encloseme]]></wp:meta_key>
+				<wp:meta_value><![CDATA[1]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wxr_import_user_slug]]></wp:meta_key>
+				<wp:meta_value><![CDATA[admin]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wxr_import_term]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:3:{s:8:"taxonomy";s:8:"category";s:4:"slug";s:13:"uncategorized";s:4:"name";s:13:"Uncategorized";}]]></wp:meta_value>
+			</wp:postmeta>
 			<wp:comment>
 				<wp:comment_id>1</wp:comment_id>
 				<wp:comment_author><![CDATA[A WordPress Commenter]]></wp:comment_author>
@@ -83,12 +106,45 @@
 				<wp:comment_date_gmt><![CDATA[2025-02-20 20:25:16]]></wp:comment_date_gmt>
 				<wp:comment_content><![CDATA[Hi, this is a comment.
 To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
-Commenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.]]></wp:comment_content>
+Commenter avatars come from <a href=\"https://gravatar.com/\" rel=\"nofollow ugc\">Gravatar</a>.]]></wp:comment_content>
 				<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
 				<wp:comment_type><![CDATA[comment]]></wp:comment_type>
 				<wp:comment_parent>0</wp:comment_parent>
 				<wp:comment_user_id>0</wp:comment_user_id>
 			</wp:comment>
+		</item>
+		<item>
+			<title><![CDATA[image]]></title>
+			<link>https://playground.wordpress.net/scope:clever-abandoned-school/2025/02/20/hello-world/image/</link>
+			<pubDate>Mon, 24 Feb 2025 12:39:14 +0000</pubDate>
+			<dc:creator><![CDATA[admin]]></dc:creator>
+			<guid isPermaLink="false">https://playground.wordpress.net/scope:clever-abandoned-school/wp-content/uploads/2025/02/image.png</guid>
+			<description></description>
+			<content:encoded><![CDATA[]]></content:encoded>
+			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+			<wp:post_id>12</wp:post_id>
+			<wp:post_date><![CDATA[2025-02-24 12:39:14]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2025-02-24 12:39:14]]></wp:post_date_gmt>
+			<wp:post_modified><![CDATA[2025-02-24 12:39:14]]></wp:post_modified>
+			<wp:post_modified_gmt><![CDATA[2025-02-24 12:39:14]]></wp:post_modified_gmt>
+			<wp:comment_status><![CDATA[open]]></wp:comment_status>
+			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+			<wp:post_name><![CDATA[image]]></wp:post_name>
+			<wp:status><![CDATA[inherit]]></wp:status>
+			<wp:post_parent>10</wp:post_parent>
+			<wp:menu_order>0</wp:menu_order>
+			<wp:post_type><![CDATA[attachment]]></wp:post_type>
+			<wp:post_password><![CDATA[]]></wp:post_password>
+			<wp:is_sticky>0</wp:is_sticky>
+			<wp:attachment_url><![CDATA[https://playground.wordpress.net/scope:clever-abandoned-school/wp-content/uploads/2025/02/image.png]]></wp:attachment_url>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+				<wp:meta_value><![CDATA[2025/02/image.png]]></wp:meta_value>
+			</wp:postmeta>
+			<wp:postmeta>
+				<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+				<wp:meta_value><![CDATA[a:6:{s:5:"width";i:435;s:6:"height";i:600;s:4:"file";s:17:"2025/02/image.png";s:8:"filesize";i:423502;s:5:"sizes";a:2:{s:6:"medium";a:5:{s:4:"file";s:17:"image-218x300.png";s:5:"width";i:218;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:127363;}s:9:"thumbnail";a:5:{s:4:"file";s:17:"image-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:48257;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			</wp:postmeta>
 		</item>
 	</channel>
 </rss>
