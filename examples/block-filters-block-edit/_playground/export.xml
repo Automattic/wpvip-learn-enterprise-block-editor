@@ -47,35 +47,16 @@
 		<generator>https://wordpress.org/?v=6.7.2</generator>
 
 		<item>
-			<title><![CDATA[Enhancing a core block with custom InspectorControls]]></title>
+			<title><![CDATA[Enhancing a core image block with custom size controls]]></title>
 			<link>http://localhost:8881/?p=1</link>
 			<pubDate>Thu, 20 Feb 2025 20:25:16 +0000</pubDate>
 			<dc:creator><![CDATA[admin]]></dc:creator>
 			<guid isPermaLink="false">http://localhost:8881/?p=1</guid>
 			<description></description>
-			<content:encoded><![CDATA[<!-- wp:paragraph {"style":{"color":{"background":"#fffced"}}} -->
-<p class="has-background" style="background-color:#fffced">The <code>core/paragraph</code> has been enhanced with a custom <code>InspectorControls</code> panel to control the maximum number of characters</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"style":{"color":{"background":"#fffced"}}} -->
-<p class="has-background" style="background-color:#fffced">Notice how this feature only applies to  <code>core/paragraph</code> (and not to <code>core/heading</code> from example)</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
-
-<!-- wp:paragraph -->
+			<content:encoded><![CDATA[<!-- wp:paragraph -->
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere faucibus enim a auctor. Nullam pretium, est sed tempus luctus, turpis dui lobortis ante, iaculis volutpat mauris libero id orci. Integer venenatis vehicula dolor. Nullam eget velit massa. Sed congue et elit eget pretium. Cras lacinia neque sapien, in sodales lorem tempus eu. Nullam aliquam ligula finibus augue suscipit mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam cursus volutpat pharetra. Phasellus est turpis, condimentum vitae neque vitae, malesuada ultricies mi.</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Maecenas facilisis, lectus euismod ullamcorper feugiat, purus nulla pharetra mi, quis tempus tortor ante sit amet sapien. Ut sit amet euismod urna, scelerisque luctus velit. Nulla facilisi. Quisque vel cursus sem. Vestibulum in maximus mi. Morbi rutrum nulla magna, vel viverra dolor mollis posuere. Maecenas id dictum odio. Duis sagittis rhoncus urna, et congue ex rhoncus nec. Phasellus ac porttitor diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->]]></content:encoded>
+]]>			</content:encoded>
 			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 			<wp:post_id>10</wp:post_id>
 			<wp:post_date><![CDATA[2025-02-20 20:25:16]]></wp:post_date>
