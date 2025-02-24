@@ -16,9 +16,10 @@
 add_action( 'enqueue_block_editor_assets', 'wpviplearn_editor_assets' );
 
 /**
- * Enqueue the editor assets.
+ * EnqueueEditor scripts and styles
  */
 function wpviplearn_editor_assets() {
+
 	$dir = untrailingslashit( plugin_dir_path( __FILE__ ) );
 	$url = untrailingslashit( plugin_dir_url( __FILE__ ) );
 
@@ -33,6 +34,28 @@ function wpviplearn_editor_assets() {
 			true
 		);
 
-		wp_set_script_translations( 'wpviplearn-slot-fills', 'wpviplearn' );
+		wp_set_script_translations( 'wpviplearn-inspector-controls-filter-block-edit', 'wpviplearn' );
+	}
+}
+
+
+add_action( 'enqueue_block_assets', 'wpviplearn_block_assets' );
+
+/**
+ * Enqueue Editor content scripts and styles.
+ */
+function wpviplearn_block_assets() {
+
+	$dir = untrailingslashit( plugin_dir_path( __FILE__ ) );
+	$url = untrailingslashit( plugin_dir_url( __FILE__ ) );
+
+	if ( file_exists( "{$dir}/build/index.css" ) ) {
+
+		wp_enqueue_style(
+			'wpviplearn-inspector-controls-filter-block-edit',
+			"{$url}/build/index.css",
+			array(),
+			filemtime( "{$dir}/build/index.css" )
+		);
 	}
 }

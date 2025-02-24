@@ -1,13 +1,28 @@
 import { registerPlugin } from '@wordpress/plugins';
-import { PluginDocumentSettingPanel } from '@wordpress/editor';
+import {
+	PluginDocumentSettingPanel,
+	store as editorStore,
+} from '@wordpress/editor';
+import { store as coreStore } from '@wordpress/core-data';
 import { useSelect } from '@wordpress/data';
 import { __ } from '@wordpress/i18n';
 
 const ReadingTimePanel = () => {
+	const isViewable = useSelect( ( select ) => {
+		const postTypeName = select( editorStore ).getCurrentPostType();
+		const postTypeObject = select( coreStore ).getPostType( postTypeName );
+		return postTypeObject?.viewable;
+	}, [] );
+
 	const postContent = useSelect(
 		( select ) => select( 'core/editor' ).getEditedPostContent(),
 		[]
 	);
+
+	// If the post type is not viewable, then do not render my the fill.
+	if ( ! isViewable ) {
+		return null;
+	}
 
 	const calculateReadingTime = ( content ) => {
 		const wordsPerMinute = 200;

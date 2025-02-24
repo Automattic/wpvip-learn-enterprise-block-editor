@@ -9,7 +9,7 @@
 				"resource": "git:directory",
 				"url": "https://github.com/Automattic/wpvip-learn-enterprise-block-editor",
 				"ref": "HEAD",
-				"path": "examples/inspector-controls-filter-blockEdit"
+				"path": "examples/block-filters-inspector-controls"
 			},
 			"options": {
 				"activate": true
@@ -22,7 +22,7 @@
 			"step": "importWxr",
 			"file": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/inspector-controls-filter-blockEdit/_playground/export.xml"
+				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/block-filters-inspector-controls/_playground/export.xml"
 			}
 		}
 	]

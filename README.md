@@ -40,6 +40,9 @@ By running `npm run setup` from the root of the project you'll:
 
 -   Module 6: Customizing the Editor Experience
     -   Lesson 6.1: Custom Block Panels and Inspectors
-        -   [inspector-controls-filter-blockEdit](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/inspector-controls-filter-blockEdit) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/inspector-controls-filter-blockEdit/_playground/blueprint.json))
+        -   [block-filters-inspector-controls](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-filters-inspector-controls) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-filters-inspector-controls/_playground/blueprint.json))
     -   Lesson 6.2: Slot & Fill System
         -   [slot-fills](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/slot-fills) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/slot-fills/_playground/blueprint.json))
+    -   Lesson 6.4: Editor Filters and Actions
+        -   [block-filters-block-edit](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-filters-block-edit) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-filters-block-edit/_playground/blueprint.json))
+        -   [block-filters-inspector-controls](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-filters-inspector-controls) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-filters-inspector-controls/_playground/blueprint.json))

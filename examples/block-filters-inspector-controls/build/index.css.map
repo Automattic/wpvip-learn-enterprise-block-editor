@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "index.css",
+	"mappings": ";;;AAAA,gBAAgB;AAAhB;EACC;EACA;EACA;AAED;AADC;EACC;AAGF,C",
+	"sources": [
+		"webpack://@wpviplearn/block-filters-inspector-controls/./src/index.scss"
+	],
+	"sourcesContent": [
+		".exceeds-character-limit {\n\ttext-decoration: underline;\n\ttext-decoration-color: red;\n\ttext-decoration-thickness: 3px;\n\t&::before {\n\t\tcontent: \"⚠️ \";\n\t}\n}\n"
+	],
+	"names": [],
+	"sourceRoot": ""
+}

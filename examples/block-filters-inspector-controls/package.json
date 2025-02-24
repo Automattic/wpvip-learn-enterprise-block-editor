@@ -1,5 +1,5 @@
 {
-	"name": "@wpviplearn/inspector-controls-filter-blockedit",
+	"name": "@wpviplearn/block-filters-inspector-controls",
 	"scripts": {
 		"start": "wp-scripts start",
 		"build": "wp-scripts build"

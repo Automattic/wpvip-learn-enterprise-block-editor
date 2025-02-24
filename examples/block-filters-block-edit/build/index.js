@@ -2,64 +2,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/addMaxCharactersAttribute.js":
-/*!******************************************!*\
-  !*** ./src/addMaxCharactersAttribute.js ***!
-  \******************************************/
+/***/ "./src/withImageSizeControls.js":
+/*!**************************************!*\
+  !*** ./src/withImageSizeControls.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/hooks */ "@wordpress/hooks");
-/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_hooks__WEBPACK_IMPORTED_MODULE_0__);
-
-
-/**
- * Add the `maxCharacters` attribute to the Paragraph block.
- *
- * @param {Object} settings Block settings.
- * @param {string} name     Block name.
- * @return {Object} Modified block settings.
- */
-const addMaxCharactersAttribute = (settings, name) => {
-  // Only apply to the Paragraph block.
-  if (name !== 'core/paragraph') {
-    return settings;
-  }
-
-  // Add the `maxCharacters` attribute to the block's attributes.
-  settings.attributes = {
-    ...settings.attributes,
-    maxCharacters: {
-      type: 'number',
-      default: 100 // Default character limit.
-    }
-  };
-  return settings;
-};
-
-// Hook into the blocks.registerBlockType filter.
-
-(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_0__.addFilter)('blocks.registerBlockType', 'my-plugin/add-max-characters-attribute', addMaxCharactersAttribute);
-
-/***/ }),
-
-/***/ "./src/withCharacterLimitWarning.js":
-/*!******************************************!*\
-  !*** ./src/withCharacterLimitWarning.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/hooks */ "@wordpress/hooks");
-/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_hooks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/compose */ "@wordpress/compose");
-/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/compose */ "@wordpress/compose");
+/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_compose__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/hooks */ "@wordpress/hooks");
+/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_hooks__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
 
@@ -68,64 +27,63 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const withCharacterLimitWarning = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigherOrderComponent)(BlockEdit => {
+const withImageSizeControls = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_0__.createHigherOrderComponent)(BlockEdit => {
   return props => {
-    // Only apply to the Paragraph block.
-    if (props.name !== 'core/paragraph') {
+    // Only apply to the Core Image block
+    if (props.name !== 'core/image') {
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(BlockEdit, {
         ...props
       });
     }
 
-    // Get the block's attributes and setAttributes function.
+    // Destructure attributes and setAttributes
     const {
       attributes,
       setAttributes
     } = props;
     const {
-      content,
-      maxCharacters
+      width,
+      height
     } = attributes;
-
-    // Check if the content exceeds the character limit.
-    const exceedsLimit = content && maxCharacters && content.length > maxCharacters;
-
-    // Update the maxCharacters attribute.
-    const updateMaxCharacters = newValue => {
-      const parsedValue = parseInt(newValue, 10);
-      if (!isNaN(parsedValue) && parsedValue > 0) {
-        setAttributes({
-          maxCharacters: parsedValue
-        });
-      }
-    };
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(BlockEdit, {
         ...props
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-          title: "Character Limit Settings",
-          initialOpen: true,
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
-            label: "Maximum Characters",
-            type: "number",
-            value: maxCharacters || '',
-            onChange: updateMaxCharacters,
-            min: 1,
-            help: "Set the maximum number of characters allowed for this paragraph."
-          }), exceedsLimit && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Notice, {
-            status: "warning",
-            isDismissible: false,
-            children: ["This paragraph exceeds the recommended", ' ', maxCharacters, "-character limit. Consider splitting it into smaller paragraphs for better readability."]
-          })]
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+          style: {
+            backgroundColor: '#FFFDCD'
+          },
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
+            title: "Image Size Settings",
+            initialOpen: true,
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
+              label: "Width",
+              value: width || '',
+              onChange: value => setAttributes({
+                width: value
+              }),
+              min: 100,
+              max: 800,
+              step: 10
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
+              label: "Height",
+              value: height || '',
+              onChange: value => setAttributes({
+                height: value
+              }),
+              min: 100,
+              max: 800,
+              step: 10
+            })]
+          })
         })
       })]
     });
   };
-}, 'withCharacterLimitWarning');
+}, 'withImageSizeControls');
 
-// Hook into the BlockEdit component.
-(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_0__.addFilter)('editor.BlockEdit', 'my-plugin/with-character-limit-warning', withCharacterLimitWarning);
+// Hook into the editor.BlockEdit filter
+(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_4__.addFilter)('editor.BlockEdit', 'my-plugin/with-image-size-controls', withImageSizeControls);
 
 /***/ }),
 
@@ -264,9 +222,7 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _addMaxCharactersAttribute__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./addMaxCharactersAttribute */ "./src/addMaxCharactersAttribute.js");
-/* harmony import */ var _withCharacterLimitWarning__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./withCharacterLimitWarning */ "./src/withCharacterLimitWarning.js");
-
+/* harmony import */ var _withImageSizeControls__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./withImageSizeControls */ "./src/withImageSizeControls.js");
 
 })();
 

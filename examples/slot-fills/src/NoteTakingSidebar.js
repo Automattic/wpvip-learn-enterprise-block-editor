@@ -1,12 +1,26 @@
 /* global localStorage */
 import { __ } from '@wordpress/i18n';
-import { PluginSidebar } from '@wordpress/editor';
+import { PluginSidebar, store as editorStore } from '@wordpress/editor';
+import { store as coreStore } from '@wordpress/core-data';
 import { PanelBody, TextareaControl, Button } from '@wordpress/components';
 import { registerPlugin } from '@wordpress/plugins';
 import { useState, useEffect } from '@wordpress/element';
 import { useSelect } from '@wordpress/data';
 
 const NoteTakingSidebar = () => {
+	// Retrieve information about the current post type.
+	const { isViewable, postTypeName } = useSelect( ( select ) => {
+		const postType = select( editorStore ).getCurrentPostType();
+		const postTypeObject = select( coreStore ).getPostType( postType );
+		return {
+			isViewable: postTypeObject?.viewable,
+			postTypeName: postType,
+		};
+	}, [] );
+
+	// The list of post types that are allowed to render the plugin.
+	const allowedPostTypes = [ 'post' ];
+
 	const [ notes, setNotes ] = useState( '' );
 	const postId = useSelect(
 		( select ) => select( 'core/editor' ).getCurrentPostId(),
@@ -28,6 +42,11 @@ const NoteTakingSidebar = () => {
 		setNotes( '' );
 		localStorage.removeItem( `editor_notes_${ postId }` );
 	};
+
+	// If the post type is not viewable or not in the allowed list, do not render the plugin.
+	if ( ! isViewable || ! allowedPostTypes.includes( postTypeName ) ) {
+		return null;
+	}
 
 	return (
 		<PluginSidebar

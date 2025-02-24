@@ -1,0 +1,9 @@
+.exceeds-character-limit {
+	text-decoration: underline;
+	text-decoration-color: #f00;
+	text-decoration-thickness: 3px;
+
+	&::before {
+		content: "⚠️ ";
+	}
+}
