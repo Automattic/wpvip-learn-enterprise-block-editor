@@ -39,6 +39,7 @@ By running `npm run setup` from the root of the project you'll:
         -   [modify-block-variation](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/modify-block-variation) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/modify-block-variation/_playground/blueprint.json))
 
 -   Module 6: Customizing the Editor Experience
+
     -   Lesson 6.1: Custom Block Panels and Inspectors
         -   [block-filters-inspector-controls](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-filters-inspector-controls) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-filters-inspector-controls/_playground/blueprint.json))
     -   Lesson 6.2: Slot & Fill System
@@ -48,3 +49,7 @@ By running `npm run setup` from the root of the project you'll:
     -   Lesson 6.4: Editor Filters and Actions
         -   [block-filters-block-edit](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-filters-block-edit) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-filters-block-edit/_playground/blueprint.json))
         -   [block-filters-inspector-controls](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-filters-inspector-controls) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-filters-inspector-controls/_playground/blueprint.json))
+
+-   Module 7: WordPress Data Layer and wp.data
+    -   Lesson 7.5: Creating Custom Data Stores
+        -   [review-system](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/review-system) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/review-system/_playground/blueprint.json))
