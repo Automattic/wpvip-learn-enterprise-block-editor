@@ -1,9 +1,12 @@
 import { useSelect, useDispatch } from '@wordpress/data';
-import { PluginDocumentSettingPanel } from '@wordpress/editor';
+import {
+	PluginDocumentSettingPanel,
+	store as editStore,
+} from '@wordpress/editor';
 import { Button } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import { formatDate } from './utils';
-
+import { useEffect } from '@wordpress/element';
 // create and register the store
 import './store';
 
@@ -22,6 +25,7 @@ const ReviewPanel = () => {
 	const { updateReviewStatus, clearHistory } = useDispatch(
 		'review-system/review'
 	);
+	const { toggleEditorPanelOpened } = useDispatch( editStore );
 
 	const handleStatusChange = ( newStatus ) => {
 		updateReviewStatus( postId, newStatus );
@@ -62,6 +66,10 @@ const ReviewPanel = () => {
 				return 'transparent';
 		}
 	};
+
+	useEffect( () => {
+		toggleEditorPanelOpened( 'review-panel' );
+	}, [] );
 
 	return (
 		<PluginDocumentSettingPanel
