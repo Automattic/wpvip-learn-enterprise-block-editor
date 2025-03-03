@@ -19,7 +19,8 @@ __webpack_require__.r(__webpack_exports__);
 // The CSS for this block style is located in the `style.css` file.
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockStyle)('core/image', {
   name: 'hand-drawn-js',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Hand Drawn JS', 'example-block-style-js')
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Hand Drawn JS', 'example-block-style-js'),
+  isDefault: true
 });
 
 /***/ }),

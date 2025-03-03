@@ -6,4 +6,8 @@
 	border-radius: 50px 5px 50px 5px/5px 50px 5px 50px !important;
 	transform: rotate(2deg);
 	padding: 10px;
+
+	&:hover {
+		background-color: #9acd32;
+	}
 }

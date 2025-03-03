@@ -5,4 +5,5 @@ import { __ } from '@wordpress/i18n';
 registerBlockStyle( 'core/image', {
 	name: 'hand-drawn-js',
 	label: __( 'Hand Drawn JS', 'example-block-style-js' ),
+	isDefault: true,
 } );
