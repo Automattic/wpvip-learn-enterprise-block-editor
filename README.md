@@ -51,5 +51,10 @@ By running `npm run setup` from the root of the project you'll:
         -   [block-filters-inspector-controls](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-filters-inspector-controls) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-filters-inspector-controls/_playground/blueprint.json))
 
 -   Module 7: WordPress Data Layer and wp.data
+
     -   Lesson 7.5: Creating Custom Data Stores
         -   [review-system](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/review-system) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/review-system/_playground/blueprint.json))
+
+-   Module 8: Interactivity API
+    -   Lesson 8.2: Implementing the Interactivity API
+        -   [iapi-global-local-derived-state](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/iapi-global-local-derived-state) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/iapi-global-local-derived-state/_playground/blueprint.json))
