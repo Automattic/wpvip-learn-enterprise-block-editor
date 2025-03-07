@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/6.7.2" created="2025-03-07 12:16" -->
+<!-- generator="WordPress/6.7.2" created="2025-03-06 21:38" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -28,7 +28,7 @@
 		<title>My WordPress Website</title>
 		<link>http://localhost:8881</link>
 		<description></description>
-		<pubDate>Fri, 07 Mar 2025 12:16:54 +0000</pubDate>
+		<pubDate>Thu, 06 Mar 2025 21:38:08 +0000</pubDate>
 		<language>en-US</language>
 		<wp:wxr_version>1.2</wp:wxr_version>
 		<wp:base_site_url>http://localhost:8881</wp:base_site_url>
@@ -47,9 +47,9 @@
 		<generator>https://wordpress.org/?v=6.7.2</generator>
 
 		<item>
-			<title><![CDATA[Gobal, Local and Derived State example - 3 blocks]]></title>
+			<title><![CDATA[Global, Local and Derived State example - 3 blocks]]></title>
 			<link>http://localhost:8881/?p=1</link>
-			<pubDate>Fri, 07 Mar 2025 12:12:32 +0000</pubDate>
+			<pubDate>Thu, 06 Mar 2025 17:45:33 +0000</pubDate>
 			<dc:creator><![CDATA[admin]]></dc:creator>
 			<guid isPermaLink="false">http://localhost:8881/?p=1</guid>
 			<description></description>
@@ -72,10 +72,10 @@
 <!-- /wp:columns -->]]></content:encoded>
 			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 			<wp:post_id>10</wp:post_id>
-			<wp:post_date><![CDATA[2025-03-07 12:12:32]]></wp:post_date>
-			<wp:post_date_gmt><![CDATA[2025-03-07 12:12:32]]></wp:post_date_gmt>
-			<wp:post_modified><![CDATA[2025-03-07 12:16:40]]></wp:post_modified>
-			<wp:post_modified_gmt><![CDATA[2025-03-07 12:16:40]]></wp:post_modified_gmt>
+			<wp:post_date><![CDATA[2025-03-06 17:45:33]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2025-03-06 17:45:33]]></wp:post_date_gmt>
+			<wp:post_modified><![CDATA[2025-03-06 21:37:55]]></wp:post_modified>
+			<wp:post_modified_gmt><![CDATA[2025-03-06 21:37:55]]></wp:post_modified_gmt>
 			<wp:comment_status><![CDATA[open]]></wp:comment_status>
 			<wp:ping_status><![CDATA[open]]></wp:ping_status>
 			<wp:post_name><![CDATA[hello-world]]></wp:post_name>
@@ -92,8 +92,8 @@
 				<wp:comment_author_email><![CDATA[wapuu@wordpress.example]]></wp:comment_author_email>
 				<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
 				<wp:comment_author_IP><![CDATA[]]></wp:comment_author_IP>
-				<wp:comment_date><![CDATA[2025-03-07 12:12:32]]></wp:comment_date>
-				<wp:comment_date_gmt><![CDATA[2025-03-07 12:12:32]]></wp:comment_date_gmt>
+				<wp:comment_date><![CDATA[2025-03-06 17:45:33]]></wp:comment_date>
+				<wp:comment_date_gmt><![CDATA[2025-03-06 17:45:33]]></wp:comment_date_gmt>
 				<wp:comment_content><![CDATA[Hi, this is a comment.
 To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
 Commenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.]]></wp:comment_content>
