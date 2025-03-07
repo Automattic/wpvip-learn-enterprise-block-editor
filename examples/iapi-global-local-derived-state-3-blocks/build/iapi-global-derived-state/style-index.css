@@ -1,0 +1,30 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/iapi-global-derived-state/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-iapi-global-derived-state {
+  font-size: 1em;
+  background: rgba(255, 255, 0, 0.1019607843);
+  padding: 1em;
+}
+.wp-block-create-block-iapi-global-derived-state .three-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+.wp-block-create-block-iapi-global-derived-state .primary-fruits {
+  background: rgba(0, 255, 0, 0.1019607843);
+}
+.wp-block-create-block-iapi-global-derived-state .secondary-foods {
+  background: rgba(0, 0, 255, 0.1019607843);
+}
+
+/*# sourceMappingURL=style-index.css.map*/

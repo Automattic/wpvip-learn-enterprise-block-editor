@@ -1,0 +1,29 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/2025/03/06/hello-world",
+	"login": true,
+	"steps": [
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/Automattic/wpvip-learn-enterprise-block-editor",
+				"ref": "HEAD",
+				"path": "examples/iapi-global-local-derived-state-3-blocks"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "resetData"
+		},
+		{
+			"step": "importWxr",
+			"file": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/iapi-global-local-derived-state-3-blocks/_playground/export.xml"
+			}
+		}
+	]
+}
