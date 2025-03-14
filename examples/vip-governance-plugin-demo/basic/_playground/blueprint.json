@@ -12,7 +12,7 @@
 			"pluginData": {
 				"resource": "git:directory",
 				"url": "https://github.com/Automattic/vip-governance-plugin.git",
-				"ref": "trunk",
+				"ref": "HEAD",
 				"path": ""
 			}
 		},
