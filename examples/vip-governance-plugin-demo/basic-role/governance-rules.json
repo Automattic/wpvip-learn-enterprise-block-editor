@@ -1,0 +1,45 @@
+{
+	"$schema": "https://api.wpvip.com/schemas/plugins/governance.json",
+	"version": "1.0.0",
+	"rules": [
+		{
+			"type": "role",
+			"roles": [ "administrator" ],
+			"allowedFeatures": [ "codeEditor", "lockBlocks" ],
+			"allowedBlocks": [ "*" ]
+		},
+		{
+			"type": "role",
+			"roles": [ "editor" ],
+			"allowedFeatures": [ "lockBlocks" ],
+			"allowedBlocks": [
+				"core/paragraph",
+				"core/heading",
+				"core/image",
+				"core/gallery",
+				"core/list",
+				"core/quote",
+				"core/button",
+				"core/columns",
+				"core/media-text",
+				"core/file"
+			]
+		},
+		{
+			"type": "role",
+			"roles": [ "author", "contributor" ],
+			"allowedFeatures": [],
+			"allowedBlocks": [
+				"core/paragraph",
+				"core/heading",
+				"core/image",
+				"core/list"
+			]
+		},
+		{
+			"type": "default",
+			"allowedFeatures": [],
+			"allowedBlocks": [ "core/paragraph" ]
+		}
+	]
+}

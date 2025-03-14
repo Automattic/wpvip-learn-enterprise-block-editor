@@ -1,1 +1,2 @@
 -   Basic ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/vip-governance-plugin-demo/basic/_playground/blueprint.json))
+-   Basic Role ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/vip-governance-plugin-demo/basic-role/_playground/blueprint.json))

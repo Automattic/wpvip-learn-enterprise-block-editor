@@ -5,7 +5,10 @@
 		"php": "8.0",
 		"wp": "latest"
 	},
-	"login": true,
+	"login": {
+		"username": "myeditoruser",
+		"password": "mypass"
+	},
 	"steps": [
 		{
 			"step": "installPlugin",
@@ -25,8 +28,12 @@
 			"path": "/wordpress/wp-content/plugins/vip-governance/governance-rules.json",
 			"data": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/vip-governance-plugin-demo/basic/governance-rules.json"
+				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/vip-governance-plugin-demo/basic-role/governance-rules.json"
 			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; $user_id = wp_create_user('myeditoruser', 'mypass', 'myuser@localhost'); (new WP_User($user_id))->set_role('editor');"
 		}
 	]
 }
