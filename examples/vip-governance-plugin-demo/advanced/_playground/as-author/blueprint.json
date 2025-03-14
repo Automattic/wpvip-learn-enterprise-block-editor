@@ -34,10 +34,10 @@
 		{
 			"step": "runPHP",
 			"code": "<?php require '/wordpress/wp-load.php'; wp_update_post(['ID' => 1, 'post_author' => get_user_by('login', 'myauthoruser')->ID]);"
+		},
+		{
+			"step": "login",
+			"username": "myauthoruser"
 		}
-	],
-	"login": {
-		"username": "myauthoruser",
-		"password": "mypass"
-	}
+	]
 }
