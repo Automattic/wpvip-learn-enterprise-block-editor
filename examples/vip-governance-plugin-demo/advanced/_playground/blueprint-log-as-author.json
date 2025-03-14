@@ -34,6 +34,10 @@
 		{
 			"step": "runPHP",
 			"code": "<?php require '/wordpress/wp-load.php'; $user_id = wp_create_user('myauthoruser', 'mypass', 'myuser@localhost'); (new WP_User($user_id))->set_role('author');"
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; wp_update_post(['ID' => 1, 'post_author' => get_user_by('login', 'myauthoruser')->ID]);"
 		}
 	]
 }
