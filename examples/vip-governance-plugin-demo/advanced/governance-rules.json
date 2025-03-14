@@ -1,0 +1,74 @@
+{
+	"$schema": "https://api.wpvip.com/schemas/plugins/governance.json",
+	"version": "1.0.0",
+	"rules": [
+		{
+			"type": "role",
+			"roles": [ "administrator" ],
+			"allowedFeatures": [ "codeEditor", "lockBlocks" ],
+			"allowedBlocks": [ "*" ]
+		},
+		{
+			"type": "role",
+			"roles": [ "editor" ],
+			"allowedFeatures": [ "lockBlocks" ],
+			"allowedBlocks": [
+				"core/paragraph",
+				"core/heading",
+				"core/image",
+				"core/gallery",
+				"core/list",
+				"core/quote",
+				"core/columns"
+			],
+			"blockSettings": {
+				"core/quote": {
+					"allowedBlocks": [ "core/paragraph", "core/heading" ]
+				},
+				"core/media-text": {
+					"core/heading": {
+						"allowedBlocks": [ "core/paragraph" ]
+					}
+				}
+			}
+		},
+		{
+			"type": "postType",
+			"postTypes": [ "page" ],
+			"allowedFeatures": [ "lockBlocks" ],
+			"allowedBlocks": [
+				"core/paragraph",
+				"core/heading",
+				"core/image",
+				"core/gallery",
+				"core/columns"
+			],
+			"blockSettings": {
+				"core/columns": {
+					"allowedBlocks": [ "core/paragraph", "core/image" ]
+				}
+			}
+		},
+		{
+			"type": "postType",
+			"postTypes": [ "post" ],
+			"allowedFeatures": [],
+			"allowedBlocks": [
+				"core/paragraph",
+				"core/heading",
+				"core/image",
+				"core/quote"
+			]
+		},
+		{
+			"type": "default",
+			"allowedFeatures": [],
+			"allowedBlocks": [ "core/paragraph" ],
+			"blockSettings": {
+				"core/paragraph": {
+					"allowedBlocks": []
+				}
+			}
+		}
+	]
+}

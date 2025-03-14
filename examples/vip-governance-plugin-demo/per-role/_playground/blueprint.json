@@ -1,0 +1,39 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/wp-admin/post.php?post=1&action=edit",
+	"preferredVersions": {
+		"php": "8.0",
+		"wp": "latest"
+	},
+	"login": {
+		"username": "myeditoruser",
+		"password": "mypass"
+	},
+	"steps": [
+		{
+			"step": "installPlugin",
+			"options": {
+				"activate": true,
+				"targetFolderName": "vip-governance"
+			},
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/Automattic/vip-governance-plugin.git",
+				"ref": "HEAD",
+				"path": ""
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/plugins/vip-governance/governance-rules.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/vip-governance-plugin-demo/per-role/governance-rules.json"
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; $user_id = wp_create_user('myeditoruser', 'mypass', 'myuser@localhost'); (new WP_User($user_id))->set_role('editor');"
+		}
+	]
+}

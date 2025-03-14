@@ -28,7 +28,7 @@
 			"path": "/wordpress/wp-content/plugins/vip-governance/governance-rules.json",
 			"data": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/vip-governance-plugin-demo/basic-role/governance-rules.json"
+				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/vip-governance-plugin-demo/advanced/governance-rules.json"
 			}
 		},
 		{
