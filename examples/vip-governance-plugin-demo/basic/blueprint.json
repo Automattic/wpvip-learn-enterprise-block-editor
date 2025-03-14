@@ -1,0 +1,66 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/wp-admin/edit.php",
+	"preferredVersions": {
+		"php": "8.0",
+		"wp": "latest"
+	},
+	"steps": [
+		{
+			"step": "installPlugin",
+			"pluginZipFile": {
+				"resource": "url",
+				"url": "https://github.com/Automattic/vip-governance-plugin/releases/download/1.0.11/vip-governance-1.0.11.zip"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "wp-content/plugins/vip-governance/governance-rules.json",
+			"contents": {
+				"$schema": "https://api.wpvip.com/schemas/plugins/governance.json",
+				"version": "1.0.0",
+				"rules": [
+					{
+						"type": "default",
+						"allowedFeatures": [ "codeEditor", "lockBlocks" ],
+						"allowedBlocks": [
+							"core/paragraph",
+							"core/heading",
+							"core/image",
+							"core/list",
+							"core/quote",
+							"core/button",
+							"core/columns"
+						],
+						"blockSettings": {
+							"core/heading": {
+								"typography": {
+									"fontSizes": [
+										{
+											"name": "Custom_Small",
+											"slug": "custom-small",
+											"size": "16px"
+										},
+										{
+											"name": "Custom_Medium",
+											"slug": "custom-medium",
+											"size": "24px"
+										},
+										{
+											"name": "Custom_Large",
+											"slug": "custom-large",
+											"size": "36px"
+										}
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}
