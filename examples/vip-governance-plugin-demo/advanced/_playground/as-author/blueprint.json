@@ -5,10 +5,6 @@
 		"php": "8.0",
 		"wp": "latest"
 	},
-	"login": {
-		"username": "myauthoruser",
-		"password": "mypass"
-	},
 	"steps": [
 		{
 			"step": "installPlugin",
@@ -39,5 +35,9 @@
 			"step": "runPHP",
 			"code": "<?php require '/wordpress/wp-load.php'; wp_update_post(['ID' => 1, 'post_author' => get_user_by('login', 'myauthoruser')->ID]);"
 		}
-	]
+	],
+	"login": {
+		"username": "myauthoruser",
+		"password": "mypass"
+	}
 }
