@@ -1,3 +1,4 @@
+import * as __WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__ from "@wordpress/interactivity";
 /******/ var __webpack_modules__ = ({
 
 /***/ "./src/view.js":
@@ -8,20 +9,62 @@
 
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var module_1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! module-1 */ "module-1");
-/* harmony import */ var module_2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! module-2 */ "module-2");
-/* harmony import */ var module_3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! module-3 */ "module-3");
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([module_1__WEBPACK_IMPORTED_MODULE_0__, module_2__WEBPACK_IMPORTED_MODULE_1__, module_3__WEBPACK_IMPORTED_MODULE_2__]);
-([module_1__WEBPACK_IMPORTED_MODULE_0__, module_2__WEBPACK_IMPORTED_MODULE_1__, module_3__WEBPACK_IMPORTED_MODULE_2__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+/* harmony import */ var _wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/interactivity */ "@wordpress/interactivity");
+/* harmony import */ var module_1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! module-1 */ "module-1");
+/* harmony import */ var module_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! module-2 */ "module-2");
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([module_1__WEBPACK_IMPORTED_MODULE_1__, module_2__WEBPACK_IMPORTED_MODULE_2__]);
+([module_1__WEBPACK_IMPORTED_MODULE_1__, module_2__WEBPACK_IMPORTED_MODULE_2__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
 /* eslint-disable no-console, import/no-unresolved */
 
 
 
-(0,module_1__WEBPACK_IMPORTED_MODULE_0__.moduleOne)();
-(0,module_2__WEBPACK_IMPORTED_MODULE_1__.moduleTwo)();
-(0,module_3__WEBPACK_IMPORTED_MODULE_2__.moduleThree)();
+(0,module_1__WEBPACK_IMPORTED_MODULE_1__.moduleOne)();
+setTimeout(() => {
+  Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! module-2 */ "module-2")).then(module => {
+    const {
+      moduleTwo
+    } = module;
+    moduleTwo();
+  }).catch(error => {
+    console.error('Error loading module-3:', error);
+  });
+}, 2000);
+const {
+  state
+} = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)('script-modules-block-view', {
+  state: {
+    text: 'Hello World',
+    clicked: false,
+    color: () => state.clicked ? 'red' : 'blue'
+  },
+  actions: {
+    loadModule() {
+      console.log('loadModule');
+      Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! module-3 */ "module-3")).then(module => {
+        const {
+          moduleThree
+        } = module;
+        const value = moduleThree();
+        state.text = value;
+        state.clicked = true;
+      }).catch(error => {
+        console.error('Error loading module-3:', error);
+      });
+    }
+  }
+});
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } });
+
+/***/ }),
+
+/***/ "@wordpress/interactivity":
+/*!*******************************************!*\
+  !*** external "@wordpress/interactivity" ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__;
 
 /***/ }),
 
@@ -170,4 +213,4 @@ module.exports = import("module-3");;
 /******/ var __webpack_exports__ = __webpack_require__("./src/view.js");
 /******/ 
 
-//# sourceMappingURL=view.mjs.map
+//# sourceMappingURL=view.js.map

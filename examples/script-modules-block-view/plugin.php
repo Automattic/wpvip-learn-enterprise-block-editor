@@ -32,21 +32,6 @@ function create_block_script_modules_view_block_init() {
 	wp_register_script_module( 'module-2', $plugin_url . 'assets/js/module2.js' );
 	wp_register_script_module( 'module-3', $plugin_url . 'assets/js/module3.js' );
 
-	$dependencies = [
-		[
-			'id'     => 'module-1',
-			'import' => 'static',
-		],
-		[
-			'id'     => 'module-2',
-			'import' => 'static',
-		],
-		[
-			'id'     => 'module-3',
-			'import' => 'static',
-		],
-	];
-
 	register_block_type( __DIR__ . '/build' );
 }
 add_action( 'init', 'create_block_script_modules_view_block_init' );
