@@ -1,6 +1,6 @@
 {
 	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
-	"landingPage": "/?p=10",
+	"landingPage": "/2025/03/20/hello-world/",
 	"login": true,
 	"steps": [
 		{
