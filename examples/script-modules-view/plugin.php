@@ -46,7 +46,6 @@ function create_block_script_modules_view_block_init() {
 			'import' => 'static',
 		],
 	];
-	wp_enqueue_script_module( 'initialize', $plugin_url . 'assets/js/initialize.js', $dependencies );
 
 	register_block_type( __DIR__ . '/build' );
 }
