@@ -11,11 +11,9 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/interactivity */ "@wordpress/interactivity");
 /* harmony import */ var module_1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! module-1 */ "module-1");
-/* harmony import */ var module_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! module-2 */ "module-2");
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([module_1__WEBPACK_IMPORTED_MODULE_1__, module_2__WEBPACK_IMPORTED_MODULE_2__]);
-([module_1__WEBPACK_IMPORTED_MODULE_1__, module_2__WEBPACK_IMPORTED_MODULE_2__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([module_1__WEBPACK_IMPORTED_MODULE_1__]);
+module_1__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 /* eslint-disable no-console, import/no-unresolved */
-
 
 
 (0,module_1__WEBPACK_IMPORTED_MODULE_1__.moduleOne)();

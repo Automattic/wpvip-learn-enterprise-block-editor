@@ -9,7 +9,7 @@
 				"resource": "git:directory",
 				"url": "https://github.com/Automattic/wpvip-learn-enterprise-block-editor",
 				"ref": "HEAD",
-				"path": "examples/script-modules-block-manual"
+				"path": "examples/script-modules-block-view"
 			},
 			"options": {
 				"activate": true
@@ -22,7 +22,7 @@
 			"step": "importWxr",
 			"file": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/script-modules-block-manual/_playground/export.xml"
+				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/script-modules-block-view/_playground/export.xml"
 			}
 		}
 	]
