@@ -89,3 +89,10 @@ By running `npm run setup` from the root of the project you'll:
 -   [iapi-global-local-derived-state-3-blocks](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/iapi-global-local-derived-state-3-blocks) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/iapi-global-local-derived-state-3-blocks/_playground/blueprint.json))
 
 [^note]: These playground demos may not work well directly from the link due to [this issue](https://github.com/WordPress/wordpress-playground/issues/2171). If that's the case try copying and pasting the related `blueprint.json` on [playground.wordpress.net/builder](https://playground.wordpress.net/builder)
+
+### Module 9 Performance and Optimization
+
+#### Lesson 9.1: Optimizing JavaScript for Gutenberg
+
+-   [script-modules-block-manual](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/script-modules-block-manual) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/script-modules-block-manual/_playground/blueprint.json))
+-   [script-modules-block-view](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/script-modules-block-view) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/script-modules-block-view/_playground/blueprint.json))
