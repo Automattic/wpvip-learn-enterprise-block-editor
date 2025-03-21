@@ -46,26 +46,11 @@ add_filter(
 		wp_register_script_module( 'module-2', $plugin_url . 'assets/js/module2.js' );
 		wp_register_script_module( 'module-3', $plugin_url . 'assets/js/module3.js' );
 
-		$dependencies = [
-			[
-				'id'     => 'jquery',
-				'import' => 'static',
-			],
-			[
-				'id'     => 'module-1',
-				'import' => 'static',
-			],
-			[
-				'id'     => 'module-2',
-				'import' => 'static',
-			],
-			[
-				'id'     => 'module-3',
-				'import' => 'static',
-			],
-		];
+		$dependencies = [ 'module-1', 'module-2', 'module-3' ];
+
 		wp_enqueue_script_module( 'initialize', $plugin_url . 'assets/js/initialize.js', $dependencies );
 		wp_enqueue_script( 'jquery' );
+		
 		return $content;
 	}
 );
