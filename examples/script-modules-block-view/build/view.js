@@ -1,4 +1,5 @@
 import * as __WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__ from "@wordpress/interactivity";
+import * as __WEBPACK_EXTERNAL_MODULE_https_esm_run_lodash_es_camelCase_0689a460__ from "https://esm.run/lodash-es/camelCase";
 /******/ var __webpack_modules__ = ({
 
 /***/ "./src/view.js":
@@ -17,15 +18,16 @@ module_1__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (
 
 
 (0,module_1__WEBPACK_IMPORTED_MODULE_1__.moduleOne)();
-setTimeout(() => {
-  Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! module-2 */ "module-2")).then(module => {
+setTimeout(async () => {
+  try {
+    const module = await Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! module-2 */ "module-2"));
     const {
       moduleTwo
     } = module;
     moduleTwo();
-  }).catch(error => {
-    console.error('Error loading module-3:', error);
-  });
+  } catch (error) {
+    console.error('Error loading module-2:', error);
+  }
 }, 2000);
 const {
   state
@@ -36,23 +38,54 @@ const {
     color: () => state.clicked ? 'red' : 'blue'
   },
   actions: {
-    loadModule() {
-      console.log('loadModule');
-      Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! module-3 */ "module-3")).then(module => {
+    *loadModule() {
+      try {
+        // because we have registered this module, the build process
+        // knows how to treat this module, and mark it as dynamic import
+        // so the loading will be deferred until this action is called.
+        const {
+          default: startCase
+        } = yield Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! @lodash/startCase */ "@lodash/startCase"));
+        const module = yield Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! module-3 */ "module-3"));
         const {
           moduleThree
         } = module;
         const value = moduleThree();
-        state.text = value;
+        state.text = startCase(value);
         state.clicked = true;
-      }).catch(error => {
+
+        // because we haven't registered this module, the build process
+        // converts this call into a static import and load it from the beginning.
+        const {
+          default: camelCase
+        } = yield Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! https://esm.run/lodash-es/camelCase */ "https://esm.run/lodash-es/camelCase"));
+        console.log(camelCase('__FOO_BAR__'));
+        const {
+          fetchPosts,
+          newPost
+        } = yield Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! fetchPosts */ "fetchPosts"));
+        const posts = yield fetchPosts();
+        console.log('Posts:', posts);
+        const newPostResponse = yield newPost();
+        console.log('New post:', newPostResponse);
+      } catch (error) {
         console.error('Error loading module-3:', error);
-      });
+      }
     }
   }
 });
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } });
+
+/***/ }),
+
+/***/ "@lodash/startCase":
+/*!************************************!*\
+  !*** external "@lodash/startCase" ***!
+  \************************************/
+/***/ ((module) => {
+
+module.exports = import("@lodash/startCase");;
 
 /***/ }),
 
@@ -63,6 +96,26 @@ __webpack_async_result__();
 /***/ ((module) => {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__;
+
+/***/ }),
+
+/***/ "fetchPosts":
+/*!*****************************!*\
+  !*** external "fetchPosts" ***!
+  \*****************************/
+/***/ ((module) => {
+
+module.exports = import("fetchPosts");;
+
+/***/ }),
+
+/***/ "https://esm.run/lodash-es/camelCase":
+/*!******************************************************!*\
+  !*** external "https://esm.run/lodash-es/camelCase" ***!
+  \******************************************************/
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_https_esm_run_lodash_es_camelCase_0689a460__;
 
 /***/ }),
 

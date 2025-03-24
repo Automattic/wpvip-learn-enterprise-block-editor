@@ -36,6 +36,12 @@ module.exports = [
 					if ( request === 'module-3' ) {
 						return request;
 					}
+					if ( request === 'fetchPosts' ) {
+						return request;
+					}
+					if ( request === '@lodash/startCase' ) {
+						return request;
+					}
 				},
 			} ),
 		],

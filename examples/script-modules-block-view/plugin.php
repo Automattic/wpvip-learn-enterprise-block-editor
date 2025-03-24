@@ -31,7 +31,13 @@ function create_block_script_modules_view_block_init() {
 	wp_register_script_module( 'module-1', $plugin_url . 'assets/js/module1.js' );
 	wp_register_script_module( 'module-2', $plugin_url . 'assets/js/module2.js' );
 	wp_register_script_module( 'module-3', $plugin_url . 'assets/js/module3.js' );
-
+	
+	wp_register_script_module( 'fetchPosts', $plugin_url . 'assets/js/fetchPosts.js' );
+	
+	wp_register_script_module( '@lodash/startCase', 'https://esm.run/lodash-es/startCase' );
+	
+	wp_enqueue_script( 'wp-api-fetch' );
+	
 	register_block_type( __DIR__ . '/build' );
 }
 add_action( 'init', 'create_block_script_modules_view_block_init' );
