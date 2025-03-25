@@ -17,7 +17,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-
 /**
  * Register the block using the metadata loaded from the `block.json` file.
  * Behind the scenes, it registers also all assets so they can be enqueued
@@ -30,7 +29,6 @@ function create_block_script_modules_block_init() {
 }
 add_action( 'init', 'create_block_script_modules_block_init' );
 
-
 /**
  * Render the block.
  *
@@ -40,7 +38,6 @@ add_action( 'init', 'create_block_script_modules_block_init' );
 add_filter(
 	'render_block_create-block/script-modules-block-manual',
 	function ( $content ) {
-
 		if ( is_admin() ) {
 			return $content;
 		}
