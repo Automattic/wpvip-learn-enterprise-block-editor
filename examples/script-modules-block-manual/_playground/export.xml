@@ -54,8 +54,22 @@
 			<guid isPermaLink="false">http://localhost:8881/?p=1</guid>
 			<description></description>
 			<content:encoded><![CDATA[<!-- wp:paragraph -->
-<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+<p>The following block uses JS modules that are loaded dynamically in the browser <em>(open the browser's console)</em>:
+</p>
 <!-- /wp:paragraph -->
+
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>
+<code>module-1</code> is loaded when the block is displayed</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>
+<code>module-2</code> and <code>module-3</code> are loaded dynamically (lazy loading) after 3s</li>
+<!-- /wp:list-item -->
+
+<!-- /wp:list -->
+
 
 <!-- wp:create-block/script-modules-block-manual -->
 <p class="wp-block-create-block-script-modules-block-manual">Dynamic Modules – hello from the saved content!</p>
