@@ -12,6 +12,5 @@
     "html": false
   },
   "textdomain": "script-modules-block-manual",
-  "editorScript": "file:./index.js",
-  "viewScript": "file:./view.js"
+  "editorScript": "file:./index.js"
 }

@@ -1,1 +1,0 @@
-{"version":3,"file":"view.js","mappings":";;;;AAAA;AACAA,OAAO,CAACC,GAAG,CACV,oEACD,CAAC,C","sources":["webpack://script-modules/./src/view.js"],"sourcesContent":["/* eslint-disable no-console */\nconsole.log(\n\t'Hello World! (from create-block-script-modules-block-manual block)'\n);\n"],"names":["console","log"],"sourceRoot":""}
