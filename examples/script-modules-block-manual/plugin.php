@@ -40,6 +40,11 @@ add_action( 'init', 'create_block_script_modules_block_init' );
 add_filter(
 	'render_block_create-block/script-modules-block-manual',
 	function ( $content ) {
+
+		if ( is_admin() ) {
+			return $content;
+		}
+
 		$plugin_url = plugin_dir_url( __FILE__ );
 
 		wp_register_script_module( 'module-1', $plugin_url . 'assets/js/module1.js' );

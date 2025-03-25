@@ -12,7 +12,8 @@ setTimeout( async () => {
 
 		// Load module-3
 		const { moduleThree } = await import( 'module-3' );
-		moduleThree();
+		const messageModuleThree = moduleThree();
+		console.log( messageModuleThree );
 	} catch ( error ) {
 		console.error( 'Error loading modules:', error );
 	}
@@ -20,5 +21,6 @@ setTimeout( async () => {
 
 // Modern jQuery document ready syntax
 $( function () {
-	console.log( `Good ol' DOM ready with jQuery.` );
+	console.log( 'jQuery is ready!' );
+	console.log( 'jQuery Version:', $.fn.jquery );
 } );
