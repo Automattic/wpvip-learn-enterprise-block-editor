@@ -16,7 +16,7 @@ setTimeout( async () => {
 	} catch ( error ) {
 		console.error( 'Error loading modules:', error );
 	}
-}, 2000 );
+}, 3000 );
 
 // Modern jQuery document ready syntax
 $( function () {
