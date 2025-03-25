@@ -95,5 +95,4 @@ By running `npm run setup` from the root of the project you'll:
 #### Lesson 9.1: Optimizing JavaScript for Gutenberg
 
 -   [script-modules-block-manual](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/script-modules-block-manual) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/script-modules-block-manual/_playground/blueprint.json))
-
 -   [script-modules-block-view](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/script-modules-block-view) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/script-modules-block-view/_playground/blueprint.json))

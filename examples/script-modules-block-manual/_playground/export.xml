@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/6.7.2" created="2025-03-20 17:16" -->
+<!-- generator="WordPress/6.7.2" created="2025-03-20 21:22" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -28,7 +28,7 @@
 		<title>My WordPress Website</title>
 		<link>http://localhost:8881</link>
 		<description></description>
-		<pubDate>Thu, 20 Mar 2025 17:16:44 +0000</pubDate>
+		<pubDate>Thu, 20 Mar 2025 21:22:57 +0000</pubDate>
 		<language>en-US</language>
 		<wp:wxr_version>1.2</wp:wxr_version>
 		<wp:base_site_url>http://localhost:8881</wp:base_site_url>
@@ -47,42 +47,43 @@
 		<generator>https://wordpress.org/?v=6.7.2</generator>
 
 		<item>
-			<title><![CDATA[Script Module Block (Manual)]]></title>
+			<title><![CDATA[Script Modules with IAPI]]></title>
 			<link>http://localhost:8881/?p=1</link>
-			<pubDate>Thu, 20 Mar 2025 15:36:16 +0000</pubDate>
+			<pubDate>Thu, 20 Mar 2025 20:49:00 +0000</pubDate>
 			<dc:creator><![CDATA[admin]]></dc:creator>
-			<guid isPermaLink="false">http://localhost:8881/?p=1</guid>
+			<guid isPermaLink="false">http://localhost:8882/?p=1</guid>
 			<description></description>
 			<content:encoded><![CDATA[<!-- wp:paragraph -->
-<p>The following block uses JS modules that are loaded dynamically in the browser <em>(open the browser's console)</em>:
-</p>
+<p>The following block uses JS modules that are loaded dynamically in the browser <em>(open the browser's console)</em>:</p>
 <!-- /wp:paragraph -->
 
+<!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>
-<code>module-1</code> is loaded when the block is displayed</li>
+<li><code>module-1</code> is loaded when the block is displayed</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>
-<code>module-2</code> and <code>module-3</code> are loaded dynamically (lazy loading) after 3s</li>
+<li><code>module-2</code> is loaded in a <code>Timeout</code> after 2s</li>
 <!-- /wp:list-item -->
 
+<!-- wp:list-item -->
+<li><code>module-3</code> is loaded when the button is clicked</li>
+<!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
-<!-- wp:create-block/script-modules-block-manual -->
-<p class="wp-block-create-block-script-modules-block-manual">Dynamic Modules – hello from the saved content!</p>
-<!-- /wp:create-block/script-modules-block-manual -->
+<!-- wp:group {"className":"is-style-section-3","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-section-3" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:create-block/script-modules-manual /--></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph -->
 <p></p>
 <!-- /wp:paragraph -->]]></content:encoded>
 			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 			<wp:post_id>10</wp:post_id>
-			<wp:post_date><![CDATA[2025-03-20 15:36:16]]></wp:post_date>
-			<wp:post_date_gmt><![CDATA[2025-03-20 15:36:16]]></wp:post_date_gmt>
-			<wp:post_modified><![CDATA[2025-03-20 17:15:55]]></wp:post_modified>
-			<wp:post_modified_gmt><![CDATA[2025-03-20 17:15:55]]></wp:post_modified_gmt>
+			<wp:post_date><![CDATA[2025-03-20 20:49:00]]></wp:post_date>
+			<wp:post_date_gmt><![CDATA[2025-03-20 20:49:00]]></wp:post_date_gmt>
+			<wp:post_modified><![CDATA[2025-03-20 21:22:38]]></wp:post_modified>
+			<wp:post_modified_gmt><![CDATA[2025-03-20 21:22:38]]></wp:post_modified_gmt>
 			<wp:comment_status><![CDATA[open]]></wp:comment_status>
 			<wp:ping_status><![CDATA[open]]></wp:ping_status>
 			<wp:post_name><![CDATA[hello-world]]></wp:post_name>
@@ -99,8 +100,8 @@
 				<wp:comment_author_email><![CDATA[wapuu@wordpress.example]]></wp:comment_author_email>
 				<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
 				<wp:comment_author_IP><![CDATA[]]></wp:comment_author_IP>
-				<wp:comment_date><![CDATA[2025-03-20 15:36:16]]></wp:comment_date>
-				<wp:comment_date_gmt><![CDATA[2025-03-20 15:36:16]]></wp:comment_date_gmt>
+				<wp:comment_date><![CDATA[2025-03-20 20:49:00]]></wp:comment_date>
+				<wp:comment_date_gmt><![CDATA[2025-03-20 20:49:00]]></wp:comment_date_gmt>
 				<wp:comment_content><![CDATA[Hi, this is a comment.
 To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
 Commenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.]]></wp:comment_content>
