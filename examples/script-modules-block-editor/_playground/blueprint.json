@@ -1,6 +1,6 @@
 {
 	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
-	"landingPage": "/2025/03/20/hello-world/",
+	"landingPage": "/hello-world/",
 	"login": true,
 	"steps": [
 		{
@@ -9,21 +9,16 @@
 				"resource": "git:directory",
 				"url": "https://github.com/Automattic/wpvip-learn-enterprise-block-editor",
 				"ref": "HEAD",
-				"path": "examples/script-modules-block-manual"
+				"path": "examples/script-modules-block-editor"
 			},
 			"options": {
 				"activate": true
 			}
 		},
 		{
-			"step": "resetData"
-		},
-		{
-			"step": "importWxr",
-			"file": {
-				"resource": "url",
-				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/script-modules-block-manual/_playground/export.xml"
-			}
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/mu-plugins/rewrite.php",
+			"data": "<?php add_action( 'after_setup_theme', function() { global $wp_rewrite; $wp_rewrite->set_permalink_structure('/%postname%/'); $wp_rewrite->flush_rules(); } );"
 		}
 	]
 }

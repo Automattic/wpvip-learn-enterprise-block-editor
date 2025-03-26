@@ -19,11 +19,7 @@ module.exports = {
 			'src',
 			'CopyBlockAsJsonMenuItem.js'
 		),
-		AnotherReturn: path.resolve(
-			process.cwd(),
-			'assets',
-			'AnotherReturn.js'
-		),
+		AnotherReturn: path.resolve( process.cwd(), 'src', 'AnotherReturn.js' ),
 	},
 	output: {
 		...defaultConfig.output,

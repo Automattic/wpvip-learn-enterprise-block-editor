@@ -32,9 +32,9 @@
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-/*!*********************************!*\
-  !*** ./assets/AnotherReturn.js ***!
-  \*********************************/
+/*!******************************!*\
+  !*** ./src/AnotherReturn.js ***!
+  \******************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   text: () => (/* binding */ text)
