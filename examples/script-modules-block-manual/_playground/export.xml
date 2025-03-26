@@ -55,30 +55,9 @@
 			<description></description>
 			<content:encoded><![CDATA[
 <!-- wp:paragraph -->
-<p>The following block uses JS modules that are loaded dynamically in the browser <em>(open the browser's console)</em>:
+<p>The current plugin is loading ES modules in the Block Editor to curate the Editor experience <em>(open the browser's console)</em>
 </p>
 <!-- /wp:paragraph -->
-<!-- wp:list -->
-<ul class="wp-block-list">
-<!-- wp:list-item -->
-<li>
-<code>module-1</code> is loaded when the block is displayed
-	</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
-<li>
-<code>module-2</code> is loaded in a <code>Timeout</code> after 2s
-	</li>
-<!-- /wp:list-item -->
-</ul>
-<!-- /wp:list -->
-<!-- wp:group {"className":"is-style-section-3","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-section-3" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">
-<!-- wp:create-block/script-modules-block-manual -->
-<p class="wp-block-create-block-script-modules-block-manual">Dynamic Modules – hello from the saved content!</p>
-<!-- /wp:create-block/script-modules-block-manual -->
-</div>
-<!-- /wp:group -->
 ]]>			</content:encoded>
 			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 			<wp:post_id>10</wp:post_id>
