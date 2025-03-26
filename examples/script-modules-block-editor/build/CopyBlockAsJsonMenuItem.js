@@ -135,6 +135,9 @@ var __webpack_exports__ = {};
   !*** ./src/CopyBlockAsJsonMenuItem.js ***!
   \****************************************/
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   registerCopyBlockAsJsonMenuItem: () => (/* binding */ registerCopyBlockAsJsonMenuItem)
+/* harmony export */ });
 /* harmony import */ var _wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/plugins */ "@wordpress/plugins");
 /* harmony import */ var _wordpress_plugins__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _wordpress_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/editor */ "@wordpress/editor");
@@ -195,10 +198,14 @@ const CopyBlockAsJsonMenuItem = () => {
     onClick: handleCopy
   });
 };
-(0,_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__.registerPlugin)('wpviplearn-copy-json', {
-  render: CopyBlockAsJsonMenuItem
-});
+const registerCopyBlockAsJsonMenuItem = () => {
+  (0,_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__.registerPlugin)('wpviplearn-copy-json', {
+    render: CopyBlockAsJsonMenuItem
+  });
+};
 })();
 
+var __webpack_exports__registerCopyBlockAsJsonMenuItem = __webpack_exports__.registerCopyBlockAsJsonMenuItem;
+export { __webpack_exports__registerCopyBlockAsJsonMenuItem as registerCopyBlockAsJsonMenuItem };
 
 //# sourceMappingURL=CopyBlockAsJsonMenuItem.js.map

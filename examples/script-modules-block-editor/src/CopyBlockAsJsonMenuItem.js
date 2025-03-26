@@ -49,6 +49,8 @@ const CopyBlockAsJsonMenuItem = () => {
 	);
 };
 
-registerPlugin( 'wpviplearn-copy-json', {
-	render: CopyBlockAsJsonMenuItem,
-} );
+export const registerCopyBlockAsJsonMenuItem = () => {
+	registerPlugin( 'wpviplearn-copy-json', {
+		render: CopyBlockAsJsonMenuItem,
+	} );
+};

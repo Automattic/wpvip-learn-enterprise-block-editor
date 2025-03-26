@@ -2,9 +2,12 @@
 import '@wpviplearn/reading-time-panel';
 
 setTimeout( () => {
-	import( '@wpviplearn/copy-block-json' ).then( () => {
-		console.log( "'@wpviplearn/copy-block-json' loaded" );
-	} );
+	import( '@wpviplearn/copy-block-json' ).then(
+		( { registerCopyBlockAsJsonMenuItem } ) => {
+			console.log( "'@wpviplearn/copy-block-json' loaded" );
+			registerCopyBlockAsJsonMenuItem();
+		}
+	);
 }, 3000 );
 
 setTimeout( () => {
