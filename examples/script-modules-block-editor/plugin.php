@@ -35,6 +35,10 @@ function wpviplearn_editor_assets_modules() {
 		'@wpviplearn/some-return', 
 		$plugin_url . 'build/SomeReturn.js'
 	);
+	wp_register_script_module( 
+		'@wpviplearn/another-return', 
+		$plugin_url . 'build/AnotherReturn.js'
+	);
 
 
 	$dependencies = [
@@ -45,6 +49,10 @@ function wpviplearn_editor_assets_modules() {
 		),
 		array(
 			'id'     => '@wpviplearn/some-return',
+			'import' => 'dynamic',
+		),
+		array(
+			'id'     => '@wpviplearn/another-return',
 			'import' => 'dynamic',
 		),
 	];
