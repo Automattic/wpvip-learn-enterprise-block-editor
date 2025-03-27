@@ -59,11 +59,15 @@
 
 <!-- wp:automattic/iapi-core-blocks-inner-blocks -->
 <div data-wp-interactive="{ &quot;namespace&quot;: &quot;elementary/media-text-interactive&quot; }" data-wp-context="{ &quot;isPlaying&quot;: false }" class="wp-block-automattic-iapi-core-blocks-inner-blocks"><!-- wp:button {"className":"interactive-block"} -->
-<div class="wp-block-button interactive-block"><a class="wp-block-button__link wp-element-button">Play</a></div>
+<div class="wp-block-button interactive-block">
+<a class="wp-block-button__link wp-element-button">Play</a>
+</div>
 <!-- /wp:button -->
 
 <!-- wp:video {"className":"interactive-block"} -->
-<figure class="wp-block-video interactive-block"><video controls src="https://www.w3schools.com/html/mov_bbb.mp4"></video></figure>
+<figure class="wp-block-video interactive-block">
+<video controls src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+</figure>
 <!-- /wp:video --></div>
 <!-- /wp:automattic/iapi-core-blocks-inner-blocks -->]]></content:encoded>
 			<excerpt:encoded><![CDATA[]]></excerpt:encoded>
