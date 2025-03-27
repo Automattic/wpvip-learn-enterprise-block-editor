@@ -34,7 +34,7 @@ add_action( 'init', 'iapi_core_blocks_inner_blocks__register_block' );
 function iapi_core_blocks_inner_blocks__render_block_core_button( $block_content, $block ) {
 	if ( ! isset( $block['attrs']['className'] ) || ! str_contains(
 		$block['attrs']['className'],
-		'interactive-block' 
+		'interactive-block--button-play' 
 	) ) {
 		return $block_content;
 	}
@@ -42,7 +42,11 @@ function iapi_core_blocks_inner_blocks__render_block_core_button( $block_content
 	$p = new WP_HTML_Tag_Processor( $block_content );
 	$p->next_tag();
 
-	$p->set_attribute( 'data-wp-on--click', 'actions.play' );
+	$p->set_attribute( 'data-wp-on--click', 'actions.playOrStop' );
+		// Find the link tag inside the button.
+	if ( $p->next_tag( array( 'tag_name' => 'a' ) ) ) {
+		$p->set_attribute( 'data-wp-text', 'context.buttonText' );
+	}
 	return $p->get_updated_html();
 }
 
@@ -58,7 +62,7 @@ add_filter( 'render_block_core/button', 'iapi_core_blocks_inner_blocks__render_b
 function iapi_core_blocks_inner_blocks__render_block_core_video( $block_content, $block ) {
 	if ( ! isset( $block['attrs']['className'] ) || ! str_contains(
 		$block['attrs']['className'],
-		'interactive-block' 
+		'interactive-block--video' 
 	) ) {
 		return $block_content;
 	}
@@ -66,7 +70,7 @@ function iapi_core_blocks_inner_blocks__render_block_core_video( $block_content,
 	$p = new WP_HTML_Tag_Processor( $block_content );
 	$p->next_tag();
 
-	$p->set_attribute( 'data-wp-watch', 'callbacks.playVideo' );
+	$p->set_attribute( 'data-wp-watch', 'callbacks.playOrStopVideo' );
 	return $p->get_updated_html();
 }
 

@@ -24,10 +24,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const MY_TEMPLATE = [['core/button', {
-  className: 'interactive-block',
-  text: 'Play' // Default button text
+  className: 'interactive-block--button-play'
 }], ['core/video', {
-  className: 'interactive-block',
+  className: 'interactive-block--video',
   src: 'https://www.w3schools.com/html/mov_bbb.mp4' // Default video URL
 }]];
 const Edit = () => {
@@ -65,7 +64,7 @@ __webpack_require__.r(__webpack_exports__);
 const Save = () => {
   const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save({
     'data-wp-interactive': '{ "namespace": "elementary/media-text-interactive" }',
-    'data-wp-context': '{ "isPlaying": false }'
+    'data-wp-context': '{ "isPlaying": false, "buttonText": "Play" }'
   });
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     ...blockProps,

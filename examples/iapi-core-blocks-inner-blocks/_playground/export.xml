@@ -58,14 +58,14 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:automattic/iapi-core-blocks-inner-blocks -->
-<div data-wp-interactive="{ &quot;namespace&quot;: &quot;elementary/media-text-interactive&quot; }" data-wp-context="{ &quot;isPlaying&quot;: false }" class="wp-block-automattic-iapi-core-blocks-inner-blocks"><!-- wp:button {"className":"interactive-block"} -->
-<div class="wp-block-button interactive-block">
+<div data-wp-interactive="{ &quot;namespace&quot;: &quot;elementary/media-text-interactive&quot; }" data-wp-context="{ &quot;isPlaying&quot;: false, &quot;buttonText&quot;: &quot;Play&quot; }" class="wp-block-automattic-iapi-core-blocks-inner-blocks"><!-- wp:button {"className":"interactive-block\u002d\u002dbutton-play"} -->
+<div class="wp-block-button interactive-block--button-play">
 <a class="wp-block-button__link wp-element-button">Play</a>
 </div>
 <!-- /wp:button -->
 
-<!-- wp:video {"className":"interactive-block"} -->
-<figure class="wp-block-video interactive-block">
+<!-- wp:video {"className":"interactive-block\u002d\u002dvideo"} -->
+<figure class="wp-block-video interactive-block--video">
 <video controls src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
 </figure>
 <!-- /wp:video --></div>

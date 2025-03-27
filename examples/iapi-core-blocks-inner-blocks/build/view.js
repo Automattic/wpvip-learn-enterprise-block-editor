@@ -73,9 +73,10 @@ __webpack_require__.r(__webpack_exports__);
      *
      * @return {void}
      */
-    play() {
+    playOrStop() {
       const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
-      context.isPlaying = true;
+      context.isPlaying = !context.isPlaying;
+      context.buttonText = context.isPlaying ? 'Stop' : 'Play';
     }
   },
   callbacks: {
@@ -84,14 +85,16 @@ __webpack_require__.r(__webpack_exports__);
      *
      * @return {void}
      */
-    playVideo() {
+    playOrStopVideo() {
       const context = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
       const {
         ref
       } = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getElement)();
-      if (context.isPlaying) {
-        ref.querySelector('video')?.play();
-        context.isPlaying = false;
+      const video = ref.querySelector('video');
+      if (video && context.isPlaying) {
+        video.play();
+      } else if (video) {
+        video.pause();
       }
     }
   }

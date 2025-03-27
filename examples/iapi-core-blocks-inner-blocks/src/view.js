@@ -14,9 +14,10 @@ store( 'elementary/media-text-interactive', {
 		 *
 		 * @return {void}
 		 */
-		play() {
+		playOrStop() {
 			const context = getContext();
-			context.isPlaying = true;
+			context.isPlaying = ! context.isPlaying;
+			context.buttonText = context.isPlaying ? 'Stop' : 'Play';
 		},
 	},
 	callbacks: {
@@ -25,12 +26,14 @@ store( 'elementary/media-text-interactive', {
 		 *
 		 * @return {void}
 		 */
-		playVideo() {
+		playOrStopVideo() {
 			const context = getContext();
 			const { ref } = getElement();
-			if ( context.isPlaying ) {
-				ref.querySelector( 'video' )?.play();
-				context.isPlaying = false;
+			const video = ref.querySelector( 'video' );
+			if ( video && context.isPlaying ) {
+				video.play();
+			} else if ( video ) {
+				video.pause();
 			}
 		},
 	},

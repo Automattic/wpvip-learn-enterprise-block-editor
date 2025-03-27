@@ -8,14 +8,13 @@ const MY_TEMPLATE = [
 	[
 		'core/button',
 		{
-			className: 'interactive-block',
-			text: 'Play', // Default button text
+			className: 'interactive-block--button-play',
 		},
 	],
 	[
 		'core/video',
 		{
-			className: 'interactive-block',
+			className: 'interactive-block--video',
 			src: 'https://www.w3schools.com/html/mov_bbb.mp4', // Default video URL
 		},
 	],

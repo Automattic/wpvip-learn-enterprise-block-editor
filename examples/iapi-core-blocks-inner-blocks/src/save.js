@@ -7,7 +7,7 @@ const Save = () => {
 	const blockProps = useBlockProps.save( {
 		'data-wp-interactive':
 			'{ "namespace": "elementary/media-text-interactive" }',
-		'data-wp-context': '{ "isPlaying": false }',
+		'data-wp-context': '{ "isPlaying": false, "buttonText": "Play" }',
 	} );
 	return (
 		<div { ...blockProps }>
