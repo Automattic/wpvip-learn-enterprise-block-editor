@@ -1,0 +1,1 @@
+{"version":3,"file":"index.css","mappings":";;;AAAA;EACC;EACA;AACD,C","sources":["webpack://iapi-core-blocks-inner-blocks/./src/editor.scss"],"sourcesContent":[".wp-block-automattic-wpvip-learn-enterprise-block-editor-inner-blocks {\n\tborder: 2px solid #9c9;\n\tpadding: 10px;\n}\n"],"names":[],"sourceRoot":""}

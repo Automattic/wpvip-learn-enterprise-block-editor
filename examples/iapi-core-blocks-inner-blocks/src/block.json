@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "automattic/iapi-core-blocks-inner-blocks",
+	"version": "0.1.0",
+	"title": "Block with Inner Blocks (IAPI)",
+	"allowedBlocks": [
+		"core/paragraph",
+		"core/image",
+		"core/heading",
+		"core/list",
+		"core/quote"
+	],
+	"supports": {
+		"interactivity": true
+	},
+	"category": "widgets",
+	"example": {},
+	"textdomain": "iapi-core-blocks-inner-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"viewScriptModule": "file:./view.js"
+}

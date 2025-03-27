@@ -87,6 +87,7 @@ By running `npm run setup` from the root of the project you'll:
 
 -   [iapi-global-local-derived-state-block](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/iapi-global-local-derived-state-block) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/iapi-global-local-derived-state-block/_playground/blueprint.json))
 -   [iapi-global-local-derived-state-3-blocks](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/iapi-global-local-derived-state-3-blocks) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/iapi-global-local-derived-state-3-blocks/_playground/blueprint.json))
+-   [iapi-core-blocks-inner-blocks](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/iapi-core-blocks-inner-blocks) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/iapi-core-blocks-inner-blocks/_playground/blueprint.json))
 
 [^note]: These playground demos may not work well directly from the link due to [this issue](https://github.com/WordPress/wordpress-playground/issues/2171). If that's the case try copying and pasting the related `blueprint.json` on [playground.wordpress.net/builder](https://playground.wordpress.net/builder)
 
