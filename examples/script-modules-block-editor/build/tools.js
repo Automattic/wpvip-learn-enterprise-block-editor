@@ -32,15 +32,28 @@
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-/*!******************************!*\
-  !*** ./src/AnotherReturn.js ***!
-  \******************************/
+/*!**********************!*\
+  !*** ./src/tools.js ***!
+  \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   log: () => (/* binding */ log),
 /* harmony export */   text: () => (/* binding */ text)
 /* harmony export */ });
-const text = 'Hello World from Another Module';
-var __webpack_exports__text = __webpack_exports__.text;
-export { __webpack_exports__text as text };
+/* eslint-disable no-console */
+const text = 'Hello World from tools.js';
 
-//# sourceMappingURL=AnotherReturn.js.map
+/**
+ * Simple colored console log
+ * @param {string} message           - The message to log
+ * @param {string} [color='#bada55'] - Text color
+ * @param {string} [bg='#222']       - Background color
+ */
+const log = (message, color = '#FFF', bg = '#222') => {
+  console.log(`%c ${message} `, `background: ${bg}; color: ${color}`);
+};
+var __webpack_exports__log = __webpack_exports__.log;
+var __webpack_exports__text = __webpack_exports__.text;
+export { __webpack_exports__log as log, __webpack_exports__text as text };
+
+//# sourceMappingURL=tools.js.map

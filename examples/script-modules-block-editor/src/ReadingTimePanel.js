@@ -54,5 +54,7 @@ const ReadingTimePanel = () => {
 	);
 };
 
-console.log( 'ReadingTimePanel' );
-registerPlugin( 'reading-time-panel', { render: ReadingTimePanel } );
+export const registerReadingTimePanel = () => {
+	console.log( 'ReadingTimePanel' );
+	registerPlugin( 'reading-time-panel', { render: ReadingTimePanel } );
+};

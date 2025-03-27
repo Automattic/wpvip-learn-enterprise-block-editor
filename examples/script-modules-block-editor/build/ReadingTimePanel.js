@@ -135,6 +135,9 @@ var __webpack_exports__ = {};
   !*** ./src/ReadingTimePanel.js ***!
   \*********************************/
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   registerReadingTimePanel: () => (/* binding */ registerReadingTimePanel)
+/* harmony export */ });
 /* harmony import */ var _wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/plugins */ "@wordpress/plugins");
 /* harmony import */ var _wordpress_plugins__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _wordpress_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/editor */ "@wordpress/editor");
@@ -192,11 +195,15 @@ const ReadingTimePanel = () => {
     })
   });
 };
-console.log('ReadingTimePanel');
-(0,_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__.registerPlugin)('reading-time-panel', {
-  render: ReadingTimePanel
-});
+const registerReadingTimePanel = () => {
+  console.log('ReadingTimePanel');
+  (0,_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__.registerPlugin)('reading-time-panel', {
+    render: ReadingTimePanel
+  });
+};
 })();
 
+var __webpack_exports__registerReadingTimePanel = __webpack_exports__.registerReadingTimePanel;
+export { __webpack_exports__registerReadingTimePanel as registerReadingTimePanel };
 
 //# sourceMappingURL=ReadingTimePanel.js.map

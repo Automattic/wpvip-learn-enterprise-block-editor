@@ -36,13 +36,16 @@ function wpviplearn_editor_assets_modules() {
 		$plugin_url . 'build/SomeReturn.js'
 	);
 	wp_register_script_module( 
-		'@wpviplearn/another-return', 
-		$plugin_url . 'build/AnotherReturn.js'
+		'@wpviplearn/tools', 
+		$plugin_url . 'build/tools.js'
 	);
 
 
 	$dependencies = [
-		'@wpviplearn/reading-time-panel',
+		array(
+			'id'     => '@wpviplearn/reading-time-panel',
+			'import' => 'dynamic',
+		),
 		array(
 			'id'     => '@wpviplearn/copy-block-json',
 			'import' => 'dynamic',
@@ -52,7 +55,7 @@ function wpviplearn_editor_assets_modules() {
 			'import' => 'dynamic',
 		),
 		array(
-			'id'     => '@wpviplearn/another-return',
+			'id'     => '@wpviplearn/tools',
 			'import' => 'dynamic',
 		),
 	];
