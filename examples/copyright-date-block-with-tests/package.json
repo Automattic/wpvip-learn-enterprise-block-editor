@@ -1,0 +1,35 @@
+{
+	"name": "copyright-date-block-with-tests",
+	"version": "0.1.0",
+	"description": "Display your site's copyright date.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start",
+		"test:unit": "wp-scripts test-unit-js --verbose",
+		"test:unit:help": "wp-scripts test-unit-js --help",
+		"test:unit:watch": "wp-scripts test-unit-js --watch",
+		"test:unit:debug": "wp-scripts --inspect-brk test-unit-js --runInBand --no-cache",
+		"env:start": "wp-env start",
+		"env:stop": "wp-env stop",
+		"test:playwright": "wp-scripts test-playwright",
+		"test:playwright:help": "wp-scripts test-playwright --help",
+		"test:playwright:debug": "wp-scripts test-playwright --debug",
+		"test:playwright:headed": "wp-scripts test-playwright --headed"
+	},
+	"devDependencies": {
+		"@wordpress/env": "^8.12.0",
+		"@wordpress/scripts": "^30.14.0",
+		"@wordpress/blocks": "^14.10.0",
+		"@testing-library/react": "^14.1.2",
+		"@testing-library/user-event": "^14.6.1",
+		"@testing-library/jest-dom": "^6.6.3"
+	}
+}

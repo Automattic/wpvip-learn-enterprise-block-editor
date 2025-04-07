@@ -1,0 +1,18 @@
+{
+	"core": "WordPress/WordPress",
+	"plugins": [ "." ],
+	"env": {
+		"development": {
+			"port": 8889
+		},
+		"tests": {
+			"port": 8890
+		}
+	},
+	"config": {
+		"WP_DEBUG": true,
+		"SCRIPT_DEBUG": true,
+		"WP_ENVIRONMENT_TYPE": "development",
+		"WP_AUTO_LOGIN": true
+	}
+}
