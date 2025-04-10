@@ -23,9 +23,6 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: 'npm'
-                  cache-dependency-path: |
-                      package-lock.json
-                      examples/*/package-lock.json
 
             - name: Set up PHP
               uses: shivammathur/setup-php@v2
@@ -69,16 +66,25 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: 'npm'
-                  cache-dependency-path: |
-                      package-lock.json
-                      examples/*/package-lock.json
 
             - name: Install root dependencies
               run: npm ci
 
-            - name: Install example dependencies and run tests
+            # Tests for specific examples
+            # Currently, tests exist only in the 'copyright-date-block-with-tests' example
+
+            - name: Install example dependencies
               working-directory: examples/copyright-date-block-with-tests
-              run: |
-                  npm ci
-                  npm run test:unit
-                  npm run test:e2e
+              run: npm ci
+
+            - name: Run unit tests
+              working-directory: examples/copyright-date-block-with-tests
+              run: npm run test:unit
+
+            - name: Start WordPress
+              working-directory: examples/copyright-date-block-with-tests
+              run: npm run wp-env start
+
+            - name: Run E2E tests
+              working-directory: examples/copyright-date-block-with-tests
+              run: npm run test:e2e
