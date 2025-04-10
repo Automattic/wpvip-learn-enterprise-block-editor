@@ -26,11 +26,11 @@
 		"test:e2e:headed": "wp-scripts test-playwright --headed"
 	},
 	"devDependencies": {
-		"@wordpress/env": "^8.12.0",
-		"@wordpress/scripts": "^30.14.0",
-		"@wordpress/blocks": "^14.10.0",
+		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/react": "^14.1.2",
 		"@testing-library/user-event": "^14.6.1",
-		"@testing-library/jest-dom": "^6.6.3"
+		"@wordpress/blocks": "^14.10.0",
+		"@wordpress/env": "^10.21.0",
+		"@wordpress/scripts": "^30.14.0"
 	}
 }
