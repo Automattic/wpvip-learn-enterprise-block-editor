@@ -82,6 +82,7 @@ jobs:
               run: npm run test:unit
 
             - name: Install Playwright dependencies
+              working-directory: examples/copyright-date-block-with-tests
               run: |
                   npx playwright install chromium firefox webkit --with-deps
 
