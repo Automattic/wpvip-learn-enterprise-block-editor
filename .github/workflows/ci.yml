@@ -1,0 +1,73 @@
+name: CI
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [18.x]
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Set up Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: 'npm'
+
+            - name: Set up PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: '8.0'
+                  extensions: mbstring, xml, ctype, iconv, intl, json, pdo, dom, fileinfo, libxml, simplexml, xmlreader, xmlwriter, zip
+                  coverage: none
+
+            - name: Install Node.js dependencies
+              run: npm ci
+
+            - name: Install Composer dependencies
+              run: composer install --prefer-dist --no-progress
+
+            - name: Run PHP linting
+              run: composer run lint
+
+            - name: Run JavaScript linting
+              run: npm run lint:js
+
+            - name: Run CSS linting
+              run: npm run lint:css
+
+    test:
+        needs: lint
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [18.x]
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Set up Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: 'npm'
+
+            - name: Install Node.js dependencies
+              run: npm ci
+
+            - name: Run copyright-date-block tests
+              working-directory: examples/copyright-date-block-with-tests
+              run: |
+                  npm ci
+                  npm run test:unit
+                  npm run test:e2e
