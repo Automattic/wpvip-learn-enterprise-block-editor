@@ -82,6 +82,9 @@ jobs:
               working-directory: examples/copyright-date-block-with-tests
               run: npx playwright install --with-deps
 
+            - name: Install wp-env globally
+              run: npm install -g @wordpress/env
+
             - name: Start WordPress
               working-directory: examples/copyright-date-block-with-tests
               run: npm run env:start
