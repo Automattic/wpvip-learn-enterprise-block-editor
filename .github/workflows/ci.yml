@@ -1,4 +1,4 @@
-name: Examples CI
+name: Examples lint and test
 
 on:
     push:
