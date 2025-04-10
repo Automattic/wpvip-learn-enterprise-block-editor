@@ -28,7 +28,7 @@ module.exports = [
 				// With modules, use `requestToExternalModule`:
 				requestToExternalModule( request ) {
 					if ( request === 'module-1' ) {
-						return request;
+						return `module ${ request }`;
 					}
 					if ( request === 'module-2' ) {
 						return request;

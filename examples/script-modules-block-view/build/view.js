@@ -1,1 +1,84 @@
-import*as e from"https://esm.run/lodash-es/camelCase";import*as o from"@wordpress/interactivity";var r,t,s,a,l={11:(e,o,r)=>{r.a(e,(async(e,o)=>{try{var t=r(833),s=r(517),a=e([s]);(0,(s=(a.then?(await a)():a)[0]).moduleOne)(),setTimeout((async()=>{try{const e=await Promise.resolve().then(r.bind(r,896)),{moduleTwo:o}=e;o()}catch(e){console.error("Error loading module-2:",e)}}),2e3);const{state:l}=(0,t.store)("script-modules-block-view",{state:{text:"Hello World",clicked:!1,color:()=>l.clicked?"red":"blue"},actions:{*loadModule(){try{const{default:e}=yield Promise.resolve().then(r.bind(r,783)),o=yield Promise.resolve().then(r.bind(r,271)),{moduleThree:t}=o,s=t();l.text=e(s),l.clicked=!0;const{default:a}=yield Promise.resolve().then(r.bind(r,345));console.log(a("__FOO_BAR__"));const{fetchPosts:n,newPost:c}=yield Promise.resolve().then(r.bind(r,980)),i=yield n();console.log("Posts:",i);const d=yield c();console.log("New post:",d)}catch(e){console.error("Error loading module-3:",e)}}}});o()}catch(e){o(e)}}))},271:e=>{e.exports=import("module-3")},345:o=>{o.exports=e},517:e=>{e.exports=import("module-1")},783:e=>{e.exports=import("@lodash/startCase")},833:(e,r,t)=>{var s,a;e.exports=(s={store:()=>o.store},a={},t.d(a,s),a)},896:e=>{e.exports=import("module-2")},980:e=>{e.exports=import("fetchPosts")}},n={};function c(e){var o=n[e];if(void 0!==o)return o.exports;var r=n[e]={exports:{}};return l[e](r,r.exports,c),r.exports}r="function"==typeof Symbol?Symbol("webpack queues"):"__webpack_queues__",t="function"==typeof Symbol?Symbol("webpack exports"):"__webpack_exports__",s="function"==typeof Symbol?Symbol("webpack error"):"__webpack_error__",a=e=>{e&&e.d<1&&(e.d=1,e.forEach((e=>e.r--)),e.forEach((e=>e.r--?e.r++:e())))},c.a=(e,o,l)=>{var n;l&&((n=[]).d=-1);var c,i,d,p=new Set,m=e.exports,u=new Promise(((e,o)=>{d=o,i=e}));u[t]=m,u[r]=e=>(n&&e(n),p.forEach(e),u.catch((e=>{}))),e.exports=u,o((e=>{var o;c=(e=>e.map((e=>{if(null!==e&&"object"==typeof e){if(e[r])return e;if(e.then){var o=[];o.d=0,e.then((e=>{l[t]=e,a(o)}),(e=>{l[s]=e,a(o)}));var l={};return l[r]=e=>e(o),l}}var n={};return n[r]=e=>{},n[t]=e,n})))(e);var l=()=>c.map((e=>{if(e[s])throw e[s];return e[t]})),i=new Promise((e=>{(o=()=>e(l)).r=0;var t=e=>e!==n&&!p.has(e)&&(p.add(e),e&&!e.d&&(o.r++,e.push(o)));c.map((e=>e[r](t)))}));return o.r?i:l()}),(e=>(e?d(u[s]=e):i(m),a(n)))),n&&n.d<0&&(n.d=0)},c.d=(e,o)=>{for(var r in o)c.o(o,r)&&!c.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:o[r]})},c.o=(e,o)=>Object.prototype.hasOwnProperty.call(e,o),c(11);
+import * as e from 'https://esm.run/lodash-es/camelCase';
+import * as o from '@wordpress/interactivity';
+import * as t from 'module-1';
+var r = {
+		271: ( e ) => {
+			e.exports = import( 'module-3' );
+		},
+		345: ( o ) => {
+			o.exports = e;
+		},
+		783: ( e ) => {
+			e.exports = import( '@lodash/startCase' );
+		},
+		896: ( e ) => {
+			e.exports = import( 'module-2' );
+		},
+		980: ( e ) => {
+			e.exports = import( 'fetchPosts' );
+		},
+	},
+	s = {};
+function l( e ) {
+	var o = s[ e ];
+	if ( void 0 !== o ) return o.exports;
+	var t = ( s[ e ] = { exports: {} } );
+	return r[ e ]( t, t.exports, l ), t.exports;
+}
+( l.d = ( e, o ) => {
+	for ( var t in o )
+		l.o( o, t ) &&
+			! l.o( e, t ) &&
+			Object.defineProperty( e, t, { enumerable: ! 0, get: o[ t ] } );
+} ),
+	( l.o = ( e, o ) => Object.prototype.hasOwnProperty.call( e, o ) );
+const n = ( ( i = { store: () => o.store } ), ( d = {} ), l.d( d, i ), d );
+var i, d;
+const c = ( ( e ) => {
+	var o = {};
+	return l.d( o, e ), o;
+} )( { moduleOne: () => t.moduleOne } );
+setTimeout( async () => {
+	try {
+		const e = await Promise.resolve().then( l.bind( l, 896 ) ),
+			{ moduleTwo: o } = e;
+		o();
+	} catch ( e ) {
+		console.error( 'Error loading module-2:', e );
+	}
+}, 2e3 ),
+	setTimeout( async () => {
+		( 0, c.moduleOne )();
+	}, 4e3 );
+const { state: a } = ( 0, n.store )( 'script-modules-block-view', {
+	state: {
+		text: 'Hello World',
+		clicked: ! 1,
+		color: () => ( a.clicked ? 'red' : 'blue' ),
+	},
+	actions: {
+		*loadModule() {
+			try {
+				const { default: e } = yield Promise.resolve().then(
+						l.bind( l, 783 )
+					),
+					o = yield Promise.resolve().then( l.bind( l, 271 ) ),
+					{ moduleThree: t } = o,
+					r = t();
+				( a.text = e( r ) ), ( a.clicked = ! 0 );
+				const { default: s } = yield Promise.resolve().then(
+					l.bind( l, 345 )
+				);
+				console.log( s( '__FOO_BAR__' ) );
+				const { fetchPosts: n, newPost: i } =
+						yield Promise.resolve().then( l.bind( l, 980 ) ),
+					d = yield n();
+				console.log( 'Posts:', d );
+				const c = yield i();
+				console.log( 'New post:', c );
+			} catch ( e ) {
+				console.error( 'Error loading module-3:', e );
+			}
+		},
+	},
+} );

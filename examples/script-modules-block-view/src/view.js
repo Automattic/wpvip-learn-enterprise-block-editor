@@ -3,9 +3,6 @@
 import { store } from '@wordpress/interactivity';
 import { moduleOne } from 'module-1';
 
-// Execute moduleOne immediately
-moduleOne();
-
 // After a 2-second delay, load and execute module-2 asynchronously
 setTimeout( async () => {
 	try {
@@ -16,6 +13,12 @@ setTimeout( async () => {
 		console.error( 'Error loading module-2:', error );
 	}
 }, 2000 );
+
+// After a 2-second delay, load and execute module-2 asynchronously
+setTimeout( async () => {
+	// Execute moduleOne immediately
+	moduleOne();
+}, 4000 );
 
 // Initialize WordPress Interactivity store for this block
 const { state } = store( 'script-modules-block-view', {
