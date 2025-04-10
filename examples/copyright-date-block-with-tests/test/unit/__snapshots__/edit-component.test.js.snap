@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Edit Component matches snapshot 1`] = `
+<div>
+  <div
+    data-testid="inspector-controls"
+  >
+    <div
+      data-testid="panel-body"
+      data-title="Settings"
+    >
+      <input
+        aria-label="Show starting year"
+        data-testid="toggle-control"
+        type="checkbox"
+      />
+    </div>
+  </div>
+  <p
+    class="wp-block-copyright-date"
+  >
+    © 
+    2024
+  </p>
+</div>
+`;
