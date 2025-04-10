@@ -69,6 +69,7 @@ const ReviewPanel = () => {
 
 	useEffect( () => {
 		toggleEditorPanelOpened( 'review-panel' );
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [] );
 
 	return (
