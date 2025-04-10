@@ -19,11 +19,11 @@
 		"test:unit:debug": "wp-scripts --inspect-brk test-unit-js --runInBand --no-cache",
 		"env:start": "wp-env start",
 		"env:stop": "wp-env stop",
-		"test:playwright": "wp-scripts test-playwright",
-		"test:playwright:help": "wp-scripts test-playwright --help",
-		"test:playwright:debug": "wp-scripts test-playwright --debug",
-		"test:playwright:ui": "wp-scripts test-playwright --ui",
-		"test:playwright:headed": "wp-scripts test-playwright --headed"
+		"test:e2e": "wp-scripts test-playwright",
+		"test:e2e:help": "wp-scripts test-playwright --help",
+		"test:e2e:debug": "wp-scripts test-playwright --debug",
+		"test:e2e:ui": "wp-scripts test-playwright --ui",
+		"test:e2e:headed": "wp-scripts test-playwright --headed"
 	},
 	"devDependencies": {
 		"@wordpress/env": "^8.12.0",
