@@ -81,10 +81,14 @@ jobs:
               working-directory: examples/copyright-date-block-with-tests
               run: npm run test:unit
 
+            - name: Install Playwright dependencies
+              run: |
+                  npx playwright install chromium firefox webkit --with-deps
+
             - name: Start WordPress
               working-directory: examples/copyright-date-block-with-tests
               run: npm run env:start
 
             - name: Run E2E tests
               working-directory: examples/copyright-date-block-with-tests
-              run: npm run test:e2e
+              run: xvfb-run npm run test:e2e
