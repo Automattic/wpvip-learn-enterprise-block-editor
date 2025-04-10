@@ -27,8 +27,8 @@ jobs:
             - name: Set up PHP
               uses: shivammathur/setup-php@v2
               with:
-                  php-version: '8.0'
-                  extensions: mbstring, xml, ctype, iconv, intl, json, pdo, dom, fileinfo, libxml, simplexml, xmlreader, xmlwriter, zip
+                  php-version: '8.2'
+                  extensions: mbstring, intl, zip
                   coverage: none
 
             - name: Install root dependencies
