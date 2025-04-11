@@ -8,17 +8,20 @@ on:
     workflow_dispatch:
 
 jobs:
-    setup:
+    lint:
         uses: ./.github/workflows/_ci-setup.yml
         with:
             install-php: true
             install-composer: true
         secrets: inherit
 
-    lint:
+    run-linting:
         needs: lint
         runs-on: ubuntu-latest
         steps:
+            # Download the workspace artifact from the previous job
+            # This ensures we have access to all installed dependencies and setup
+            # Without this, we would start with a fresh workspace in each job
             - name: Download workspace
               uses: actions/download-artifact@v3
               with:
