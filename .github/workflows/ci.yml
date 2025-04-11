@@ -80,13 +80,12 @@ jobs:
 
             - name: Install Playwright dependencies
               working-directory: examples/copyright-date-block-with-tests
-              run: npx playwright install chromium firefox
+              run: npx playwright install --with-deps
 
-            - name: Install wp-env globally
-              run: npm install -g @wordpress/env
+            - name: Start WordPress
+              working-directory: examples/copyright-date-block-with-tests
+              run: npm run env:start
 
-            # Run E2E tests
-            # wp-env is launched automatically by Playwright
             - name: Run E2E tests
               working-directory: examples/copyright-date-block-with-tests
               run: xvfb-run npm run test:e2e -- --reporter=list
