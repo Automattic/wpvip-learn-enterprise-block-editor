@@ -42,7 +42,7 @@ jobs:
             # This includes all installed dependencies, PHP setup, and other workspace state
             # The artifact is downloaded in subsequent jobs that need this state
             - name: Upload workspace
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@v4
               with:
                   name: workspace
                   path: .

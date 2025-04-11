@@ -23,7 +23,7 @@ jobs:
             # This ensures we have access to all installed dependencies and setup
             # Without this, we would start with a fresh workspace in each job
             - name: Download workspace
-              uses: actions/download-artifact@v3
+              uses: actions/download-artifact@v4
               with:
                   name: workspace
                   path: .
