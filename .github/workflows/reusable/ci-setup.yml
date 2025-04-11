@@ -1,4 +1,4 @@
-name: CI Setup
+name: '_CI Setup'
 
 on:
     workflow_call:
@@ -19,12 +19,6 @@ on:
                 required: false
                 type: boolean
                 default: false
-
-run-name: CI Setup
-permissions: {}
-concurrency:
-    group: ci-setup
-    cancel-in-progress: true
 
 jobs:
     setup:
