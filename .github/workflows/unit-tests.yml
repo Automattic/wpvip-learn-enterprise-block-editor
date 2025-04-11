@@ -1,0 +1,24 @@
+name: Unit Tests
+
+on:
+    push:
+        branches: [trunk]
+    pull_request:
+        branches: [trunk]
+    workflow_dispatch:
+
+jobs:
+    setup:
+        uses: ./.github/workflows/ci-setup.yml
+        with:
+            working-directory: examples/copyright-date-block-with-tests
+            install-example-deps: true
+        secrets: inherit
+
+    run-tests:
+        needs: setup
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run unit tests
+              working-directory: examples/copyright-date-block-with-tests
+              run: npm run test:unit

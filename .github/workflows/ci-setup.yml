@@ -1,0 +1,58 @@
+name: CI Setup
+
+on:
+    workflow_call:
+        inputs:
+            working-directory:
+                required: false
+                type: string
+                default: ''
+            install-example-deps:
+                required: false
+                type: boolean
+                default: false
+            install-php:
+                required: false
+                type: boolean
+                default: false
+            install-composer:
+                required: false
+                type: boolean
+                default: false
+
+jobs:
+    setup:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [18.x]
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Set up Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: 'npm'
+
+            - name: Set up PHP
+              if: ${{ inputs.install-php }}
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: '8.2'
+                  extensions: mbstring, intl, zip
+                  coverage: none
+
+            - name: Install root dependencies
+              run: npm ci
+
+            - name: Install example dependencies
+              if: ${{ inputs.install-example-deps }}
+              working-directory: ${{ inputs.working-directory }}
+              run: npm ci
+
+            - name: Install Composer dependencies
+              if: ${{ inputs.install-composer }}
+              run: composer install --prefer-dist --no-progress

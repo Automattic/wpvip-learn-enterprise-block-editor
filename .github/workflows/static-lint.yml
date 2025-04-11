@@ -1,0 +1,31 @@
+name: Static Linting
+
+on:
+    push:
+        branches: [trunk]
+    pull_request:
+        branches: [trunk]
+    workflow_dispatch:
+
+jobs:
+    lint:
+        uses: ./.github/workflows/ci-setup.yml
+        with:
+            working-directory: examples/copyright-date-block-with-tests
+            install-example-deps: true
+            install-php: true
+            install-composer: true
+        secrets: inherit
+
+    run-linting:
+        needs: lint
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run PHP linting
+              run: composer run lint
+
+            - name: Run JavaScript linting
+              run: npm run lint:js
+
+            - name: Run CSS linting
+              run: npm run lint:css
