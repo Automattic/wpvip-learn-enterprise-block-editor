@@ -9,7 +9,7 @@ on:
 
 jobs:
     setup:
-        uses: ./.github/workflows/reusable/ci-setup.yml
+        uses: ./.github/workflows/_ci-setup.yml
         with:
             working-directory: examples/copyright-date-block-with-tests
             install-example-deps: true
