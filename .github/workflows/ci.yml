@@ -91,4 +91,4 @@ jobs:
 
             - name: Run E2E tests
               working-directory: examples/copyright-date-block-with-tests
-              run: xvfb-run npm run test:e2e
+              run: xvfb-run npm run test:e2e --reporter=list
