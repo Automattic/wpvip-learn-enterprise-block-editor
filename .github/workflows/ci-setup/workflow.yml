@@ -20,6 +20,12 @@ on:
                 type: boolean
                 default: false
 
+run-name: CI Setup
+permissions: {}
+concurrency:
+    group: ci-setup
+    cancel-in-progress: true
+
 jobs:
     setup:
         runs-on: ubuntu-latest
