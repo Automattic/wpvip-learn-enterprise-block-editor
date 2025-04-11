@@ -8,19 +8,23 @@ on:
     workflow_dispatch:
 
 jobs:
-    lint:
+    setup:
         uses: ./.github/workflows/_ci-setup.yml
         with:
-            working-directory: examples/copyright-date-block-with-tests
-            install-example-deps: true
             install-php: true
             install-composer: true
         secrets: inherit
 
-    run-linting:
+    lint:
         needs: lint
         runs-on: ubuntu-latest
         steps:
+            - name: Download workspace
+              uses: actions/download-artifact@v3
+              with:
+                  name: workspace
+                  path: .
+
             - name: Run PHP linting
               run: composer run lint
 
