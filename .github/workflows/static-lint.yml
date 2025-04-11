@@ -28,6 +28,12 @@ jobs:
                   name: workspace
                   path: .
 
+            # Restore executable permissions after downloading artifacts
+            - name: Restore file permissions
+              run: |
+                  chmod +x ./vendor/bin/phpcs
+                  chmod +x ./vendor/bin/phpcbf
+
             - name: Run PHP linting
               run: composer run lint
 
