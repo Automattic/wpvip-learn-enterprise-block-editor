@@ -10,6 +10,7 @@ describe.only( 'Save Component', () => {
 			startingYear: null,
 		};
 		const { container } = render( <Save attributes={ testAttributes } /> );
+		// container.innerHTML = ''
 		expect( container.firstChild ).toBeNull();
 	} );
 
@@ -20,6 +21,7 @@ describe.only( 'Save Component', () => {
 			startingYear: '2020',
 		};
 		const { container } = render( <Save attributes={ testAttributes } /> );
+		// container.innerHTML = '<p class="wp-block-copyright-date">© 2024</p>'
 		expect( container.textContent ).toBe( '© 2024' );
 	} );
 
@@ -30,6 +32,7 @@ describe.only( 'Save Component', () => {
 			startingYear: null,
 		};
 		const { container } = render( <Save attributes={ testAttributes } /> );
+		// container.innerHTML = '<p class="wp-block-copyright-date">© 2024</p>'
 		expect( container.textContent ).toBe( '© 2024' );
 	} );
 
@@ -40,6 +43,7 @@ describe.only( 'Save Component', () => {
 			startingYear: '2020',
 		};
 		const { container } = render( <Save attributes={ testAttributes } /> );
+		// container.innerHTML = '<p class="wp-block-copyright-date">© 2020–2024</p>'
 		expect( container.textContent ).toBe( '© 2020–2024' );
 	} );
 
@@ -48,8 +52,10 @@ describe.only( 'Save Component', () => {
 			fallbackCurrentYear: '2023',
 			showStartingYear: false,
 			startingYear: '',
+			className: 'test-class',
 		};
 		const { container } = render( <Save attributes={ testAttributes } /> );
+		// container.innerHTML = '<p class="wp-block-copyright-date">© 2023</p>'
 		const paragraph = container.querySelector( 'p' );
 		expect( paragraph ).toBeTruthy();
 		expect( paragraph ).toHaveClass( 'wp-block-copyright-date' );
