@@ -67,6 +67,11 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: 'npm'
 
+            # This is a requirement for running the E2E tests
+            # https://github.com/WordPress/gutenberg/blob/a59d45e06d909138444815ab98f1c323066c9707/packages/scripts/config/playwright.config.js#L46
+            - name: Install wp-env globally
+              run: npm install -g @wordpress/env
+
             # Tests for specific examples
             # Currently, tests exist only in the 'copyright-date-block-with-tests' example
 
@@ -81,10 +86,6 @@ jobs:
             - name: Install Playwright dependencies
               working-directory: examples/copyright-date-block-with-tests
               run: npx playwright install --with-deps
-
-            - name: Start WordPress
-              working-directory: examples/copyright-date-block-with-tests
-              run: npm run env:start
 
             - name: Run E2E tests
               working-directory: examples/copyright-date-block-with-tests
