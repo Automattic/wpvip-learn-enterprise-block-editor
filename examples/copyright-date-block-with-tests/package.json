@@ -17,6 +17,7 @@
 		"test:unit:help": "wp-scripts test-unit-js --help",
 		"test:unit:watch": "wp-scripts test-unit-js --watch",
 		"test:unit:debug": "wp-scripts --inspect-brk test-unit-js --runInBand --no-cache",
+		"wp-env": "wp-env",
 		"env:start": "wp-env start",
 		"env:stop": "wp-env stop",
 		"test:e2e": "wp-scripts test-playwright",
