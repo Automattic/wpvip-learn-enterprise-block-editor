@@ -12,11 +12,6 @@ import {
  */
 import blockJson from '../../src/block.json';
 
-/**
- * External dependencies
- */
-import '@testing-library/jest-dom';
-
 describe( 'Block Registration', () => {
 	beforeEach( () => {
 		registerBlockType(
