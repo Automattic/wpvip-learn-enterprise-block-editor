@@ -1,0 +1,35 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/wp-admin/post.php?post=10&action=edit",
+	"login": true,
+	"plugins": [
+		"https://github-proxy.com/proxy/?repo=Automattic/remote-data-blocks&release=latest&asset=remote-data-blocks.zip"
+	],
+	"steps": [
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/Automattic/remote-data-blocks-custom-query",
+				"ref": "HEAD",
+				"path": "examples/modify-block-variation"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "resetData"
+		},
+		{
+			"step": "importWxr",
+			"file": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/Automattic/remote-data-blocks-custom-query/trunk/examples/modify-block-variation/_playground/export.xml"
+			}
+		}
+	],
+	"features": {
+		"networking": true
+	}
+}

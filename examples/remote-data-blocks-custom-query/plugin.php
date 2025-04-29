@@ -7,7 +7,7 @@
  * Text Domain: remote-data-blocks
  * Version: 1.0.0
  * Requires Plugins: remote-data-blocks
- *
+ * 
  * @package RemoteDataBlocks
  */
 
@@ -15,97 +15,112 @@ namespace RemoteDataBlocks\Example\WpOrgPlugin;
 
 use RemoteDataBlocks\Config\DataSource\HttpDataSource;
 use RemoteDataBlocks\Config\Query\HttpQuery;
+use WP_Filesystem_Direct;
 
-define( 'EXAMPLE_WPORG_PLUGIN_DATA_SOURCE_UUID', 'ee0dbb0b-ebe5-4097-8cdd-bcd2e5d02b95' );
 
 /**
  * Registers a custom block to retrieve plugin information from WordPress.org.
  *
  * @return void
  */
-function register_wporg_plugin_block() {
-	if ( ! defined( 'EXAMPLE_WPORG_PLUGIN_DATA_SOURCE_UUID' ) ) {
-		return;
-	}
+function register_wporg_plugin_block(): void {
+	$plugin_data_source = HttpDataSource::from_array(
+		[
+			'service_config' => [
+				'__version'       => 1,
+				'display_name'    => 'WordPress.org Plugins',
+				'endpoint'        => 'https://api.wordpress.org',
+				'request_headers' => [
+					'Accept' => 'application/json',
+				],
+			],
+		]
+	);
 
-	$plugin_data_source = HttpDataSource::from_uuid( EXAMPLE_WPORG_PLUGIN_DATA_SOURCE_UUID );
-
-	if ( ! $plugin_data_source instanceof HttpDataSource ) {
-		return;
-	}
-
-	$plugin_query = HttpQuery::from_array(
-		array(
+	$get_plugin_query = HttpQuery::from_array(
+		[
 			'data_source'   => $plugin_data_source,
-			'endpoint'      => function ( $input_variables ) use ( $plugin_data_source ) {
-				return $plugin_data_source->get_endpoint() . '/plugins/info/1.0/' . $input_variables['plugin_slug'] . '.json';
+			'endpoint'      => function ( array $input_variables ) use ( $plugin_data_source ): string {
+				return sprintf(
+					'%s/plugins/info/1.0/%s.json',
+					$plugin_data_source->get_endpoint(),
+					$input_variables['plugin_slug'] ?? ''
+				);
 			},
-			'input_schema'  => array(
-				'plugin_slug' => array(
+			'input_schema'  => [
+				'plugin_slug' => [
 					'name' => 'Plugin Slug',
 					'type' => 'string',
-				),
-			),
-			'output_schema' => array(
+				],
+			],
+			'output_schema' => [
 				'is_collection' => false,
-				'type'          => array(
-					'name'              => array(
+				'path'          => '$',
+				'type'          => [
+					'name'              => [
 						'name' => 'Plugin Name',
 						'path' => '$.name',
 						'type' => 'string',
-					),
-					'slug'              => array(
+					],
+					'slug'              => [
 						'name' => 'Plugin Slug',
 						'path' => '$.slug',
 						'type' => 'string',
-					),
-					'version'           => array(
+					],
+					'version'           => [
 						'name' => 'Current Version',
 						'path' => '$.version',
 						'type' => 'string',
-					),
-					'author'            => array(
+					],
+					'author'            => [
 						'name' => 'Plugin Author',
 						'path' => '$.author',
 						'type' => 'string',
-					),
-					'rating'            => array(
+					],
+					'rating'            => [
 						'name' => 'Average Rating',
 						'path' => '$.rating',
 						'type' => 'number',
-					),
-					'num_ratings'       => array(
+					],
+					'num_ratings'       => [
 						'name' => 'Number of Ratings',
 						'path' => '$.num_ratings',
 						'type' => 'integer',
-					),
-					'downloaded'        => array(
+					],
+					'downloaded'        => [
 						'name' => 'Download Count',
 						'path' => '$.downloaded',
 						'type' => 'integer',
-					),
-					'last_updated'      => array(
+					],
+					'last_updated'      => [
 						'name' => 'Last Updated',
 						'path' => '$.last_updated',
 						'type' => 'string',
-					),
-					'short_description' => array(
+					],
+					'short_description' => [
 						'name' => 'Short Description',
 						'path' => '$.short_description',
 						'type' => 'string',
-					),
-				),
-			),
-		)
+					],
+				],
+			],
+		]
 	);
 
 	register_remote_data_block(
-		array(
+		[
 			'title'        => 'WP.org Plugin Info',
-			'render_query' => array(
-				'query' => $plugin_query,
-			),
-		)
+			'render_query' => [
+				'query' => $get_plugin_query,
+			],
+			'patterns'     => [
+				[
+					'html'  => file_get_contents( __DIR__ . '/pattern-dotorg-plugin.html' ),
+					'title' => 'Pattern Simple',
+				],
+			],
+
+		]
 	);
 }
 add_action( 'init', __NAMESPACE__ . '\\register_wporg_plugin_block' );
