@@ -61,17 +61,16 @@
 <p>Example:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:remote-data-blocks/wp-org-plugin-info {"remoteData":{"enabledOverrides":[],"blockName":"remote-data-blocks/wp-org-plugin-info","metadata":{"last_updated":{"name":"Last updated","type":"string","value":"2025-04-29 19:58:50"},"total_count":{"name":"Total count","type":"integer","value":1}},"pagination":[],"queryKey":"display","queryInputs":[{"plugin_slug":"query-monitor"}],"resultId":"e4dba15d-af96-493d-aead-04c46b619547","results":[{"result":{"name":{"name":"Plugin Name","type":"string","value":"Query Monitor"},"slug":{"name":"Plugin Slug","type":"string","value":"query-monitor"},"version":{"name":"Current Version","type":"string","value":"20.7.0"},"author":{"name":"Plugin Author","type":"string","value":"Matias Ventura"},"rating":{"name":"Average Rating","type":"number","value":42},"num_ratings":{"name":"Number of Ratings","type":"integer","value":3821},"downloaded":{"name":"Download Count","type":"integer","value":45606294},"last_updated":{"name":"Last Updated","type":"string","value":"2025-04-22 11:47am GMT"},"short_description":{"name":"Short Description","type":"string","value":null}},"uuid":"f0640c7c-2d74-4bf2-b404-4d62137cf275"}]}} -->
+<!-- wp:remote-data-blocks/wp-org-plugin-info {"remoteData":{"enabledOverrides":[],"blockName":"remote-data-blocks/wp-org-plugin-info","metadata":{"last_updated":{"name":"Last updated","type":"string","value":"2025-04-29 20:26:43"},"total_count":{"name":"Total count","type":"integer","value":1}},"pagination":[],"queryKey":"display","queryInputs":[{"plugin_slug":"gutenberg"}],"resultId":"387b55bd-03d8-4a1f-a3d6-8e1aad5e076b","results":[{"result":{"name":{"name":"Plugin Name","type":"string","value":"Gutenberg"},"slug":{"name":"Plugin Slug","type":"string","value":"gutenberg"},"version":{"name":"Current Version","type":"string","value":"20.7.0"},"author":{"name":"Plugin Author","type":"string","value":"Matias Ventura"},"rating":{"name":"Average Rating","type":"number","value":42},"num_ratings":{"name":"Number of Ratings","type":"integer","value":3821},"downloaded":{"name":"Download Count","type":"integer","value":45606294},"last_updated":{"name":"Last Updated","type":"string","value":"2025-04-22 11:47am GMT"},"short_description":{"name":"Short Description","type":"string","value":null}},"uuid":"8af94a10-67e2-4e67-bd5f-82f916cca1f7"}]}} -->
 <div class="wp-block-remote-data-blocks-wp-org-plugin-info rdb-container"><!-- wp:remote-data-blocks/template -->
-<!-- wp:remote-data-blocks/wp-org-plugin-info {"remoteData":{"enabledOverrides":[],"blockName":"remote-data-blocks/wp-org-plugin-info","metadata":{"last_updated":{"name":"Last updated","type":"string","value":"2025-04-29 20:05:00"},"total_count":{"name":"Total count","type":"integer","value":1}},"pagination":[],"queryKey":"display","queryInputs":[{"plugin_slug":"query-monitor"}],"resultId":"bea604e7-7ae3-4388-8c0f-739614847c54","results":[{"result":{"name":{"name":"Plugin Name","type":"string","value":"Query Monitor"},"slug":{"name":"Plugin Slug","type":"string","value":"query-monitor"},"version":{"name":"Current Version","type":"string","value":"20.7.0"},"author":{"name":"Plugin Author","type":"string","value":"Matias Ventura"},"rating":{"name":"Average Rating","type":"number","value":42},"num_ratings":{"name":"Number of Ratings","type":"integer","value":3821},"downloaded":{"name":"Download Count","type":"integer","value":45606294},"last_updated":{"name":"Last Updated","type":"string","value":"2025-04-22 11:47am GMT"},"short_description":{"name":"Short Description","type":"string","value":null}},"uuid":"73ab8228-0f63-4738-a42e-8b50a289715f"}]}} -->
-<div class="wp-block-remote-data-blocks-wp-org-plugin-info rdb-container"><!-- wp:remote-data-blocks/template -->
-<!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/123","name":"Pattern Simple"},"className":"is-style-section-5","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-section-5" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:heading {"metadata":{"name":"Plugin Name"},"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"backgroundColor":"base","textColor":"contrast"} -->
-<h2 class="wp-block-heading has-contrast-color has-base-background-color has-text-color has-background has-link-color">Query Monitor – The developer tools panel for WordPress</h2>
+<!-- wp:group {"metadata":{"categories":["Remote Data"],"patternName":"remote-data-blocks/pattern-simple","name":"Pattern Simple"},"className":"is-style-section-5","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-section-5" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:heading {"metadata":{"bindings":{"content":{"source":"remote-data/binding","args":{"block":"remote-data-blocks/wp-org-plugin-info","field":"name"}}},"name":"Plugin Name"},"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"backgroundColor":"base","textColor":"contrast"} -->
+<h2 class="wp-block-heading has-contrast-color has-base-background-color has-text-color has-background has-link-color">Gutenberg</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"metadata":{"name":"Last Updated"},"className":"rdb-block-data-last-updated","fontSize":"small"} -->
-<p class="rdb-block-data-last-updated has-small-font-size"><span class="rdb-block-label">Last Updated</span> 2025-02-04 10:16pm GMT</p>
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"remote-data/binding","args":{"block":"remote-data-blocks/wp-org-plugin-info","field":"last_updated","label":"Last Updated"}}},"name":"Last Updated"},"className":"rdb-block-data-last-updated","fontSize":"small"} -->
+<p class="rdb-block-data-last-updated has-small-font-size">
+<span class="rdb-block-label">Last Updated</span> 2025-04-22 11:47am GMT</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
@@ -80,8 +79,8 @@
 <p>author</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"align":"right","metadata":{"name":"Plugin Author"},"className":"rdb-block-data-author is-style-text-annotation","style":{"layout":{"selfStretch":"fit","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"backgroundColor":"base","textColor":"contrast"} -->
-<p class="has-text-align-right rdb-block-data-author is-style-text-annotation has-contrast-color has-base-background-color has-text-color has-background has-link-color">John Blackbourn</p>
+<!-- wp:paragraph {"align":"right","metadata":{"bindings":{"content":{"source":"remote-data/binding","args":{"block":"remote-data-blocks/wp-org-plugin-info","field":"author"}}},"name":"Plugin Author"},"className":"rdb-block-data-author is-style-text-annotation","style":{"layout":{"selfStretch":"fit","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"backgroundColor":"base","textColor":"contrast"} -->
+<p class="has-text-align-right rdb-block-data-author is-style-text-annotation has-contrast-color has-base-background-color has-text-color has-background has-link-color">Matias Ventura</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -90,8 +89,8 @@
 <p>slug:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"metadata":{"name":"Plugin Slug"},"className":"rdb-block-data-slug is-style-text-annotation","style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"backgroundColor":"base","textColor":"contrast"} -->
-<p class="rdb-block-data-slug is-style-text-annotation has-contrast-color has-base-background-color has-text-color has-background has-link-color">query-monitor</p>
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"remote-data/binding","args":{"block":"remote-data-blocks/wp-org-plugin-info","field":"slug"}}},"name":"Plugin Slug"},"className":"rdb-block-data-slug is-style-text-annotation","style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"backgroundColor":"base","textColor":"contrast"} -->
+<p class="rdb-block-data-slug is-style-text-annotation has-contrast-color has-base-background-color has-text-color has-background has-link-color">gutenberg</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -100,8 +99,8 @@
 <p>version:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"align":"right","metadata":{"name":"Current Version"},"className":"rdb-block-data-version is-style-text-annotation","style":{"color":{"background":"#ffffff"},"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"textColor":"contrast"} -->
-<p class="has-text-align-right rdb-block-data-version is-style-text-annotation has-contrast-color has-text-color has-background has-link-color" style="background-color:#ffffff">3.17.2</p>
+<!-- wp:paragraph {"align":"right","metadata":{"bindings":{"content":{"source":"remote-data/binding","args":{"block":"remote-data-blocks/wp-org-plugin-info","field":"version"}}},"name":"Current Version"},"className":"rdb-block-data-version is-style-text-annotation","style":{"color":{"background":"#ffffff"},"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"textColor":"contrast"} -->
+<p class="has-text-align-right rdb-block-data-version is-style-text-annotation has-contrast-color has-text-color has-background has-link-color" style="background-color:#ffffff">20.7.0</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -112,18 +111,18 @@
 <p>rating:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"metadata":{"name":"Average Rating"},"className":"rdb-block-data-rating is-style-text-annotation"} -->
-<p class="rdb-block-data-rating is-style-text-annotation">98</p>
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"remote-data/binding","args":{"block":"remote-data-blocks/wp-org-plugin-info","field":"rating"}}},"name":"Average Rating"},"className":"rdb-block-data-rating is-style-text-annotation"} -->
+<p class="rdb-block-data-rating is-style-text-annotation">42</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>votes:</p>
+<p>number of votes:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"metadata":{"name":"Number of Ratings"},"className":"rdb-block-data-num-ratings is-style-text-annotation"} -->
-<p class="rdb-block-data-num-ratings is-style-text-annotation">454</p>
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"remote-data/binding","args":{"block":"remote-data-blocks/wp-org-plugin-info","field":"num_ratings"}}},"name":"Number of Ratings"},"className":"rdb-block-data-num-ratings is-style-text-annotation"} -->
+<p class="rdb-block-data-num-ratings is-style-text-annotation">3821</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -132,14 +131,12 @@
 <p>downloads:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"metadata":{"name":"Download Count"},"className":"rdb-block-data-downloaded is-style-text-annotation"} -->
-<p class="rdb-block-data-downloaded is-style-text-annotation">15530866</p>
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"remote-data/binding","args":{"block":"remote-data-blocks/wp-org-plugin-info","field":"downloaded"}}},"name":"Download Count"},"className":"rdb-block-data-downloaded is-style-text-annotation"} -->
+<p class="rdb-block-data-downloaded is-style-text-annotation">45606294</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
-<!-- /wp:remote-data-blocks/template --></div>
-<!-- /wp:remote-data-blocks/wp-org-plugin-info -->
 <!-- /wp:remote-data-blocks/template --></div>
 <!-- /wp:remote-data-blocks/wp-org-plugin-info -->
 
