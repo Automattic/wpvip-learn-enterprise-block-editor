@@ -13,10 +13,7 @@
 		{
 			"step": "defineWpConfigConsts",
 			"consts": {
-				"USE_PLAYGROUND_CORS_PROXY": true,
-				"WP_DEBUG": true,
-				"WP_DEBUG_LOG": true,
-				"WP_DEBUG_DISPLAY": true
+				"USE_PLAYGROUND_CORS_PROXY": true
 			}
 		},
 		{
@@ -30,10 +27,6 @@
 				"resource": "url",
 				"url": "https://github-proxy.com/proxy/?repo=Automattic/remote-data-blocks&release=latest&asset=remote-data-blocks.zip"
 			}
-		},
-		{
-			"step": "runPHP",
-			"code": "<?php\nerror_log('Checking plugin status: ' . print_r(get_option('active_plugins'), true));\nif (function_exists('wp_get_environment_type')) {\n    error_log('Environment type: ' . wp_get_environment_type());\n}\nif (isset($_SERVER['HTTP_HOST'])) {\n    error_log('HTTP_HOST: ' . $_SERVER['HTTP_HOST']);\n}\n?>"
 		},
 		{
 			"step": "installPlugin",
