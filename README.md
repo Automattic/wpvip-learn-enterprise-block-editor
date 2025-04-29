@@ -20,36 +20,42 @@ By running `npm run setup` from the root of the project you'll:
 
 ## Examples
 
-### Module 4: Advanced Block Development
+### Module 2: Building with Blocks
 
-#### Lesson 4.1: Bindings
-
--   [block-bindings-custom-source](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-bindings-custom-source) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-bindings-custom-source/_playground/blueprint.json))
--   [block-bindings-post-meta](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-bindings-post-meta) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-bindings-post-meta/_playground/blueprint.json))
--   [editor-bindings](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/editor-bindings) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/editor-bindings/_playground/blueprint.json))
-
-#### Lesson 4.2: Inner Blocks
-
--   [inner-blocks](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/inner-blocks) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/inner-blocks/_playground/blueprint.json))
-
-#### Lesson 4.3: Context
-
--   [context](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/context) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/context/_playground/blueprint.json))
-
-#### Lesson 4.4: Deprecation
-
--   [deprecation](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/deprecation) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/deprecation/_playground/blueprint.json))
-
-#### Lesson 4.5: Transforms
-
--   [transforms-filter](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/transforms-filter) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/transforms-filter/_playground/blueprint.json))
-
-#### Lesson 4.6: Block Variations
+#### Lesson 2.5: Block Variations
 
 -   [block-variations](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-variations) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-variations/_playground/blueprint.json))
 -   [block-variations-quote](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-variations-quote) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-variations-quote/_playground/blueprint.json))
 -   [unregister-block-variations](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/unregister-block-variations) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/unregister-block-variations/_playground/blueprint.json))
 -   [modify-block-variation](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/modify-block-variation) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/modify-block-variation/_playground/blueprint.json))
+
+### Module 5: Advanced Block Development
+
+#### Lesson 5.4: Bindings
+
+-   [block-bindings-custom-source](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-bindings-custom-source) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-bindings-custom-source/_playground/blueprint.json))
+-   [block-bindings-post-meta](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-bindings-post-meta) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-bindings-post-meta/_playground/blueprint.json))
+-   [editor-bindings](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/editor-bindings) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/editor-bindings/_playground/blueprint.json))
+
+#### Lesson 5.5: Inner Blocks
+
+-   [inner-blocks](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/inner-blocks) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/inner-blocks/_playground/blueprint.json))
+
+#### Lesson 5.6: Context
+
+-   [context](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/context) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/context/_playground/blueprint.json))
+
+#### Lesson 5.7: Deprecation
+
+-   [deprecation](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/deprecation) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/deprecation/_playground/blueprint.json))
+
+#### Lesson 5.8: Transforms
+
+-   [transforms-filter](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/transforms-filter) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/transforms-filter/_playground/blueprint.json))
+
+#### Lesson 5.9: Remote Data Blocks
+
+-   [remote-data-blocks-custom-query](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/remote-data-blocks-custom-query) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/remote-data-blocks-custom-query/_playground/blueprint.json))
 
 ### Module 6: Customizing the Editor Experience
 
