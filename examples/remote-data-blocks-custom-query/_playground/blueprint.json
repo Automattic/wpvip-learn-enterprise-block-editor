@@ -4,25 +4,13 @@
 	"login": true,
 	"steps": [
 		{
-			"step": "installPlugin",
-			"pluginData": {
-				"resource": "git:directory",
-				"url": "https://github.com/Automattic/wpvip-learn-enterprise-block-editor",
-				"ref": "HEAD",
-				"path": "examples/remote-data-blocks-custom-query"
-			},
-			"options": {
-				"activate": true
-			}
-		},
-		{
-			"step": "resetData"
-		},
-		{
 			"step": "defineWpConfigConsts",
 			"consts": {
 				"USE_PLAYGROUND_CORS_PROXY": true
 			}
+		},
+		{
+			"step": "resetData"
 		},
 		{
 			"step": "installPlugin",
@@ -34,6 +22,18 @@
 				"caption": "Installing Remote Data Blocks",
 				"resource": "url",
 				"url": "https://github-proxy.com/proxy/?repo=Automattic/remote-data-blocks&release=latest&asset=remote-data-blocks.zip"
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/Automattic/wpvip-learn-enterprise-block-editor",
+				"ref": "HEAD",
+				"path": "examples/remote-data-blocks-custom-query"
+			},
+			"options": {
+				"activate": true
 			}
 		},
 		{
