@@ -55,7 +55,7 @@ By running `npm run setup` from the root of the project you'll:
 
 #### Lesson 5.9: Remote Data Blocks
 
--   [remote-data-blocks-custom-query](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/remote-data-blocks-custom-query) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/remote-data-blocks-custom-query/_playground/blueprint.json))
+-   [remote-data-blocks-custom-query](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/remote-data-blocks-custom-query)
 
 ### Module 6: Customizing the Editor Experience
 
