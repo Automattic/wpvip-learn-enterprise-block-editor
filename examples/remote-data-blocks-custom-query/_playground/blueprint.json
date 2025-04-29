@@ -4,13 +4,13 @@
 	"login": true,
 	"steps": [
 		{
+			"step": "resetData"
+		},
+		{
 			"step": "defineWpConfigConsts",
 			"consts": {
 				"USE_PLAYGROUND_CORS_PROXY": true
 			}
-		},
-		{
-			"step": "resetData"
 		},
 		{
 			"step": "installPlugin",
