@@ -7,9 +7,9 @@
 			"step": "installPlugin",
 			"pluginData": {
 				"resource": "git:directory",
-				"url": "https://github.com/Automattic/remote-data-blocks-custom-query",
+				"url": "https://github.com/Automattic/wpvip-learn-enterprise-block-editor",
 				"ref": "HEAD",
-				"path": "examples/modify-block-variation"
+				"path": "examples/remote-data-blocks-custom-query"
 			},
 			"options": {
 				"activate": true
@@ -40,7 +40,7 @@
 			"step": "importWxr",
 			"file": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/Automattic/remote-data-blocks-custom-query/trunk/examples/modify-block-variation/_playground/export.xml"
+				"url": "https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/trunk/examples/remote-data-blocks-custom-query/_playground/export.xml"
 			}
 		}
 	],
