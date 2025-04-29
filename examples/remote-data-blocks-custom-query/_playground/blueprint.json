@@ -2,9 +2,6 @@
 	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
 	"landingPage": "/wp-admin/post.php?post=10&action=edit",
 	"login": true,
-	"plugins": [
-		"https://github-proxy.com/proxy/?repo=Automattic/remote-data-blocks&release=latest&asset=remote-data-blocks.zip"
-	],
 	"steps": [
 		{
 			"step": "installPlugin",
@@ -20,6 +17,24 @@
 		},
 		{
 			"step": "resetData"
+		},
+		{
+			"step": "defineWpConfigConsts",
+			"consts": {
+				"USE_PLAYGROUND_CORS_PROXY": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"options": {
+				"activate": true,
+				"targetFolderName": "remote-data-blocks"
+			},
+			"pluginData": {
+				"caption": "Installing Remote Data Blocks",
+				"resource": "url",
+				"url": "https://github-proxy.com/proxy/?repo=Automattic/remote-data-blocks&release=latest&asset=remote-data-blocks.zip"
+			}
 		},
 		{
 			"step": "importWxr",
