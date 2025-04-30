@@ -12,16 +12,16 @@
  */
 
 namespace RemoteDataBlocks\Example\WpOrgPlugin;
-
+ 
 use RemoteDataBlocks\Config\DataSource\HttpDataSource;
 use RemoteDataBlocks\Config\Query\HttpQuery;
-use WP_Filesystem_Direct;
 
 
 /**
  * Registers a custom block to retrieve plugin information from WordPress.org.
  *
  * @return void
+ * @uses register_remote_data_block() Function provided by the Remote Data Blocks plugin.
  */
 function register_wporg_plugin_block(): void {
 	$plugin_data_source = HttpDataSource::from_array(
