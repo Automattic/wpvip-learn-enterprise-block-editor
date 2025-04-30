@@ -59,7 +59,7 @@ By running `npm run setup` from the root of the project you'll:
 
 ### Module 6: Customizing the Editor Experience
 
-#### Lesson 6.1: Custom Block Panels and Inspectors
+#### Lesson 6.1: Custom Block Controls
 
 -   [block-filters-inspector-controls](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/tree/trunk/examples/block-filters-inspector-controls) ([live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/wpvip-learn-enterprise-block-editor/refs/heads/trunk/examples/block-filters-inspector-controls/_playground/blueprint.json))
 
