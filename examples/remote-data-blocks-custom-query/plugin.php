@@ -15,6 +15,7 @@ namespace RemoteDataBlocks\Example\WpOrgPlugin;
  
 use RemoteDataBlocks\Config\DataSource\HttpDataSource;
 use RemoteDataBlocks\Config\Query\HttpQuery;
+use function register_remote_data_block;  
 
 
 /**
