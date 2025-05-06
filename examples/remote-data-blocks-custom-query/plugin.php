@@ -6,7 +6,6 @@
  * Author URI: https://remotedatablocks.com/
  * Text Domain: remote-data-blocks
  * Version: 1.0.0
- * Requires Plugins: remote-data-blocks
  * 
  * @package RemoteDataBlocks
  */
@@ -27,14 +26,14 @@ use function register_remote_data_block;
 function register_wporg_plugin_block(): void {
 	$plugin_data_source = HttpDataSource::from_array(
 		[
-			'service_config' => [
-				'__version'       => 1,
-				'display_name'    => 'WordPress.org Plugins',
-				'endpoint'        => 'https://api.wordpress.org',
-				'request_headers' => [
-					'Accept' => 'application/json',
-				],
+			
+			'__version'       => 1,
+			'display_name'    => 'WordPress.org Plugins',
+			'endpoint'        => 'https://api.wordpress.org',
+			'request_headers' => [
+				'Accept' => 'application/json',
 			],
+		
 		]
 	);
 
