@@ -1,4 +1,4 @@
-This file, `examples/editor-bindings/src/index.js`, demonstrates how to register a custom "block bindings source" in the WordPress block editor (Gutenberg) using the `@wordpress/blocks` package. Here’s a breakdown of what’s happening:
+This file, `examples/editor-bindings/src/index.js`, demonstrates how to register a custom ["block bindings source"](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-bindings/) in the WordPress block editor ([Gutenberg](https://developer.wordpress.org/block-editor/)) using the [`@wordpress/blocks`](https://www.npmjs.com/package/@wordpress/blocks) package. Here's a breakdown of what's happening:
 
 ---
 
@@ -8,7 +8,7 @@ This file, `examples/editor-bindings/src/index.js`, demonstrates how to register
 import { registerBlockBindingsSource } from '@wordpress/blocks';
 ```
 
--   This imports the function needed to register a new source for block bindings.
+-   This imports the function needed to register a new source for block bindings. See the [@wordpress/blocks documentation](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-blocks/).
 
 ---
 
@@ -36,6 +36,7 @@ registerBlockBindingsSource({
 
 -   Registers a new source called `wpviplearn/post-data`.
 -   It declares that it uses the `postType` context (e.g., 'post', 'page').
+-   Learn more about [block bindings sources](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-bindings/).
 
 ---
 
@@ -47,7 +48,7 @@ getValues({ select, bindings }) { ... }
 
 -   This function is called to retrieve the current values for the bound attributes.
 -   It loops through all bindings, and for each one:
-    -   If the attribute is in `editableAttributes` or `readOnlyAttributes`, it fetches the value from the editor's state using `select('core/editor').getEditedPostAttribute(source.args.key)`.
+    -   If the attribute is in `editableAttributes` or `readOnlyAttributes`, it fetches the value from the editor's state using [`select('core/editor')`](https://developer.wordpress.org/block-editor/reference-guides/data/data-core-editor/) and [`getEditedPostAttribute`](https://github.com/WordPress/gutenberg/blob/trunk/packages/editor/src/store/selectors.js#L110).
 -   Returns an object mapping attribute names to their current values.
 
 ---
@@ -60,7 +61,7 @@ setValues({ dispatch, bindings }) { ... }
 
 -   This function is called to update the values of the bound attributes.
 -   It loops through all bindings and collects the new values.
--   If there are any values to update, it dispatches an action to update the post in the editor: `dispatch('core/editor').editPost(values)`.
+-   If there are any values to update, it dispatches an action to update the post in the editor: [`dispatch('core/editor').editPost(values)`](https://developer.wordpress.org/block-editor/reference-guides/data/data-core-editor/#editpost).
 
 ---
 
@@ -83,5 +84,7 @@ This example shows how to create a custom block bindings source that allows bloc
 
 **Use case:**  
 This is useful for blocks that want to display or edit post-level data (like the post title or excerpt) directly from within the block editor, using the new block bindings API.
+
+For more information, see the [Gutenberg Handbook](https://developer.wordpress.org/block-editor/).
 
 If you want a deeper dive into any part of this file or how to use it in a block, let me know!
