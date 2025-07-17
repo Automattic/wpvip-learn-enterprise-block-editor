@@ -2,7 +2,7 @@
 
 [![Examples CI](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/actions/workflows/ci.yml/badge.svg)](https://github.com/Automattic/wpvip-learn-enterprise-block-editor/actions/workflows/ci.yml)
 
-This repository contains examples used in the Learn VIP Course: Enterprise Block Editor (Gutenberg)
+This repository contains examples used in the Learn VIP Course: [Enterprise Block Editor (Gutenberg)](https://learn.wpvip.com/course/enterprise-block-editor/)
 
 ## What does it provide?
 
